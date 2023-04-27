@@ -148,10 +148,6 @@ a {
   border-radius: 0.5rem;
 }
 
-.work-card .desktop-img {
-  display: none;
-}
-
 .work-card h2 {
   width: 100%;
   height: 36px;
@@ -162,14 +158,6 @@ a {
   line-height: 44px;
   color: #172b4d;
   margin-left: 0.2rem;
-}
-
-.work-card-2 .p-desktop {
-  display: none;
-}
-
-.work-card-2 .align-desktop {
-  display: none;
 }
 
 .work-card .align {
@@ -281,24 +269,58 @@ a {
   width: 100%;
 }
 
-.submit button {
+.resume button {
   box-sizing: border-box;
   padding: 12px;
-  gap: 10px;
-  width: 126px;
-  height: 48px;
+  margin-left: 1.5rem;
   border: 1px solid #6070ff;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   background-color: #fff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
-  line-height: 25px;
-  display: grid;
+  line-height: 1.5rem;
   text-align: center;
   letter-spacing: 0.03em;
   color: #396df2;
   margin-right: 10rem;
-  margin-top: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.someter button {
+  width: 142px;
+  box-sizing: border-box;
+  height: 50px;
+  border: 5px solid #6070ff;
+  border-radius: 8px;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  margin-right: 10rem;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding-left: 11px;
+}
+
+.submit button:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
+.submit button:active {
+  background-color: #1b50d4;
+  color: #fff;
+}
+
+.submit button:disabled {
+  background-color: #fff;
+  color: gray;
 }
