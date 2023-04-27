@@ -121,3 +121,99 @@ a {
   color: #384bee;
   cursor: pointer;
 }
+
+#work {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 20px;
+  padding-top: 5rem;
+}
+
+#work .work-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  grid-gap: 10px;
+  width: 100%;
+  height: 552px;
+  background: #fff;
+  border: 1px solid #def1e6;
+  border-radius: 1rem;
+}
+
+.work-card .img1 {
+  width: 100%;
+  height: 220px;
+  border-radius: 0.5rem;
+}
+
+.work-card .desktop-img {
+  display: none;
+}
+
+.work-card h2 {
+  width: 100%;
+  height: 36px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 44px;
+  color: #172b4d;
+  margin-left: 0.2rem;
+}
+
+.work-card-2 .p-desktop {
+  display: none;
+}
+
+.work-card-2 .align-desktop {
+  display: none;
+}
+
+.work-card .align {
+  width: 100%;
+}
+
+.work-card .align ul {
+  color: #c1c7d0;
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.work-card .align span {
+  width: 55px;
+  height: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1rem;
+  color: #344563;
+  margin-left: 0.4rem;
+}
+
+.work-card .align ul li {
+  width: 88px;
+  height: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1rem;
+  color: #7a869a;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.work-card p {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-left: 0.5rem;
+}
