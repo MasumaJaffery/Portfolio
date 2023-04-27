@@ -276,3 +276,29 @@ a {
   letter-spacing: 0.03em;
   color: #6070ff;
 }
+
+.submit {
+  width: 100%;
+}
+
+.submit button {
+  box-sizing: border-box;
+  padding: 12px;
+  gap: 10px;
+  width: 126px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  display: grid;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  margin-right: 10rem;
+  margin-top: 0.6rem;
+}
