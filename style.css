@@ -217,3 +217,62 @@ a {
   color: #344563;
   margin-left: 0.5rem;
 }
+
+.tags {
+  width: 100%;
+}
+
+.tags .hash {
+  display: flex;
+  list-style: none;
+  padding-right: 4.5rem;
+  gap: 0.5rem;
+  margin-left: 0.2rem;
+}
+
+.tags .hash .HTML {
+  padding: 4px 12px;
+  width: 57px;
+  height: 1.5rem;
+  background: #ebebff;
+  border-radius: 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1rem;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.tags .hash .CSS {
+  padding: 4px 12px;
+  width: 49px;
+  height: 1.5rem;
+  background: #ebebff;
+  border-radius: 8px;
+  order: 1;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1rem;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.tags .hash .JavaScript {
+  padding: 4px 12px;
+  width: 92px;
+  height: 1.5rem;
+  background: #ebebff;
+  border-radius: 0.5rem;
+  order: 2;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1rem;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
