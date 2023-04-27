@@ -17,8 +17,14 @@ main {
   overflow-x: hidden;
 }
 
-header .mobile-nav {
+header .mobile-nav,
+h4,
+#headline,
+.content h1 {
   display: flex;
+}
+
+header .mobile-nav {
   background-color: #fff;
   justify-content: space-between;
 }
@@ -29,7 +35,6 @@ h4 {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.25rem;
-  display: flex;
   color: #6070ff;
   margin: 0.625rem;
   padding-left: 0.5rem;
@@ -52,7 +57,6 @@ a {
   background-size: 375px;
   height: 718px;
   background-repeat: no-repeat;
-  display: flex;
   flex-direction: column;
 }
 
@@ -64,7 +68,6 @@ a {
   font-weight: 1000;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
   flex-wrap: wrap;
   align-items: center;
   color: #172b4d;
@@ -569,8 +572,13 @@ a {
   margin-left: 0.5rem;
 }
 
-#About {
+#About,
+#About .info,
+#About .languages ul {
   display: grid;
+}
+
+#About {
   margin-top: 6rem;
   background-image: url("Images/self.png");
   background-size: cover;
@@ -583,13 +591,17 @@ a {
   margin: 2rem;
 }
 
+#About .Aboutcontent h3,
+#About .iconsAbout ul {
+  display: flex;
+}
+
 #About .Aboutcontent h3 {
   width: 100%;
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
   line-height: 3.25rem;
-  display: flex;
   align-items: center;
   color: #172b4d;
 }
@@ -620,7 +632,6 @@ a {
 }
 
 #About .iconsAbout ul {
-  display: flex;
   list-style: none;
   margin-left: 0.5rem;
   gap: 2rem;
@@ -650,7 +661,6 @@ a {
 }
 
 #About .info {
-  display: grid;
   grid-template-rows: repeat(1, 1fr);
   margin-top: -9rem;
 }
@@ -686,7 +696,6 @@ a {
 }
 
 #About .languages ul {
-  display: grid;
   grid-template-rows: repeat(3, 1fr);
   list-style: none;
 }
