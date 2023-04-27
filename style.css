@@ -8,6 +8,7 @@
 
 body {
   background-color: #e5e5e5;
+  font-family: 'Poppins', sans-serif;
 }
 
 main {
@@ -20,7 +21,6 @@ header .mobile-nav {
   display: flex;
   background-color: #fff;
   justify-content: space-between;
-  font-family: 'Poppins', sans-serif;
 }
 
 h4 {
@@ -60,7 +60,6 @@ a {
   padding-top: 9.5rem;
   padding-left: 2rem;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 1000;
   font-size: 40px;
@@ -77,7 +76,6 @@ a {
   display: block;
   padding: 1rem 0.5rem 1rem 2rem;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -89,7 +87,6 @@ a {
 }
 
 .content a {
-  font-family: 'Poppins', sans-serif;
   text-decoration: none;
   width: 100%;
   margin-left: 2rem;
@@ -151,7 +148,6 @@ a {
 .work-card h2 {
   width: 100%;
   height: 36px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
@@ -173,7 +169,6 @@ a {
 .work-card .align span {
   width: 55px;
   height: 1rem;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -185,7 +180,6 @@ a {
 .work-card .align ul li {
   width: 88px;
   height: 1rem;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -197,7 +191,6 @@ a {
 
 .work-card p {
   width: 100%;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -224,7 +217,6 @@ a {
   height: 1.5rem;
   background: #ebebff;
   border-radius: 0.5rem;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -240,7 +232,6 @@ a {
   background: #ebebff;
   border-radius: 8px;
   order: 1;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -256,7 +247,6 @@ a {
   background: #ebebff;
   border-radius: 0.5rem;
   order: 2;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -278,7 +268,6 @@ a {
   border: 1px solid #6070ff;
   border-radius: 0.5rem;
   background-color: #fff;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -298,7 +287,6 @@ a {
   border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: #fff;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -317,7 +305,6 @@ a {
   border: 5px solid #6070ff;
   border-radius: 8px;
   background-color: #fff;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -377,7 +364,6 @@ a {
 .work-card-2 h2 {
   width: 100%;
   height: 2rem;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -399,7 +385,6 @@ a {
 .work-card-2 .align span {
   width: 55px;
   height: 16px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -411,7 +396,6 @@ a {
 .work-card-2 .align ul li {
   width: 88px;
   height: 1rem;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -423,7 +407,6 @@ a {
 
 .work-card-2 p {
   width: 100%;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -458,7 +441,6 @@ a {
 .work-card-3 h2 {
   width: 100%;
   height: 36px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
@@ -480,7 +462,6 @@ a {
 .work-card-3 .align span {
   width: 55px;
   height: 1rem;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -492,7 +473,6 @@ a {
 .work-card-3 .align ul li {
   width: 5.5rem;
   height: 1rem;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -504,7 +484,6 @@ a {
 
 .work-card-3 p {
   width: 100%;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -539,7 +518,6 @@ a {
 .work-card-4 h2 {
   width: 100%;
   height: 2rem;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -561,7 +539,6 @@ a {
 .work-card-4 .align span {
   width: 55px;
   height: 1rem;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -573,7 +550,6 @@ a {
 .work-card-4 .align ul li {
   width: 5.5rem;
   height: 1rem;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -585,7 +561,6 @@ a {
 
 .work-card-4 p {
   width: 100%;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -610,7 +585,6 @@ a {
 
 #About .Aboutcontent h3 {
   width: 100%;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -622,7 +596,6 @@ a {
 
 #About .Aboutcontent p {
   width: 100%;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -633,7 +606,6 @@ a {
 
 #About .Aboutcontent a {
   height: 1.5rem;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -686,7 +658,6 @@ a {
 #About .other h5 {
   height: 1.5rem;
   margin-left: 2.5rem;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 1.25rem;
@@ -699,7 +670,6 @@ a {
 #About .info .inline h5 {
   height: 1.5rem;
   margin-left: 2.5rem;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 650;
   font-size: 1.25rem;
@@ -738,7 +708,6 @@ a {
   position: relative;
   left: 6px;
   bottom: 28px;
-  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
