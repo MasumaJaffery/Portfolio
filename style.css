@@ -269,6 +269,28 @@ a {
   width: 100%;
 }
 
+.submit button {
+  box-sizing: border-box;
+  padding: 12px;
+  gap: 10px;
+  width: 126px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+  display: grid;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  margin-right: 10rem;
+  margin-top: 0.6rem;
+}
+
 .resume button {
   box-sizing: border-box;
   padding: 12px;
@@ -323,4 +345,247 @@ a {
 .submit button:disabled {
   background-color: #fff;
   color: gray;
+}
+
+.work-card-2 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+#work .work-card-2 {
+  align-items: center;
+  padding: 1rem;
+  gap: 12px;
+  width: 100%;
+  height: 552px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 1rem;
+}
+
+.work-card-2 .img2 {
+  width: 100%;
+  height: 220px;
+  border-radius: 8px;
+}
+
+.work-card-2 h2 {
+  width: 100%;
+  height: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  color: #172b4d;
+  margin-left: 0.2rem;
+}
+
+.work-card-2 .align {
+  width: 100%;
+}
+
+.work-card-2 .align ul {
+  color: #c1c7d0;
+  display: flex;
+  margin-top: 1.8rem;
+}
+
+.work-card-2 .align span {
+  width: 55px;
+  height: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  margin-left: 0.4rem;
+}
+
+.work-card-2 .align ul li {
+  width: 88px;
+  height: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1rem;
+  color: #7a869a;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.work-card-2 p {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-left: 0.5rem;
+}
+
+.work-card-3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+#work .work-card-3 {
+  align-items: center;
+  padding: 1rem;
+  gap: 12px;
+  width: 100%;
+  height: 552px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 1rem;
+}
+
+.work-card-3 .img3 {
+  width: 100%;
+  height: 13.75rem;
+  border-radius: 0.5rem;
+}
+
+.work-card-3 h2 {
+  width: 100%;
+  height: 36px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 44px;
+  color: #172b4d;
+  margin-left: 0.2rem;
+}
+
+.work-card-3 .align {
+  width: 100%;
+}
+
+.work-card-3 .align ul {
+  color: #c1c7d0;
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.work-card-3 .align span {
+  width: 55px;
+  height: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1rem;
+  color: #344563;
+  margin-left: 0.4rem;
+}
+
+.work-card-3 .align ul li {
+  width: 5.5rem;
+  height: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1rem;
+  color: #7a869a;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.work-card-3 p {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-left: 0.5rem;
+}
+
+.work-card-4 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+#work .work-card-4 {
+  align-items: center;
+  padding: 1rem;
+  gap: 12px;
+  width: 100%;
+  height: 552px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.work-card-4 .img4 {
+  width: 100%;
+  height: 13.75rem;
+  border-radius: 8px;
+}
+
+.work-card-4 h2 {
+  width: 100%;
+  height: 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 2rem;
+  color: #172b4d;
+  margin-left: 0.2rem;
+}
+
+.work-card-4 .align {
+  width: 100%;
+}
+
+.work-card-4 .align ul {
+  color: #c1c7d0;
+  display: flex;
+  margin-top: 1.8rem;
+}
+
+.work-card-4 .align span {
+  width: 55px;
+  height: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1rem;
+  color: #344563;
+  margin-left: 0.4rem;
+}
+
+.work-card-4 .align ul li {
+  width: 5.5rem;
+  height: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1rem;
+  color: #7a869a;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+
+.work-card-4 p {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-left: 0.5rem;
 }
