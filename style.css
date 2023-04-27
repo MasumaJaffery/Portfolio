@@ -301,7 +301,7 @@ a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.5rem;
   text-align: center;
   letter-spacing: 0.03em;
@@ -368,6 +368,10 @@ a {
   width: 100%;
   height: 220px;
   border-radius: 8px;
+}
+
+.work-card-2 .desktop-img-2 {
+  display: none;
 }
 
 .work-card-2 h2 {
@@ -588,4 +592,175 @@ a {
   line-height: 24px;
   color: #344563;
   margin-left: 0.5rem;
+}
+
+#About {
+  display: grid;
+  margin-top: 6rem;
+  background-image: url("Images/self.png");
+  background-size: cover;
+  width: 100%;
+  height: 1280px;
+}
+
+#About .Aboutcontent {
+  padding-top: 5rem;
+  margin: 2rem;
+}
+
+#About .Aboutcontent h3 {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+  display: flex;
+  align-items: center;
+  color: #172b4d;
+}
+
+#About .Aboutcontent p {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #344563;
+  padding-top: 1.2rem;
+}
+
+#About .Aboutcontent a {
+  height: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #7f8cff;
+  position: absolute;
+  margin-top: 1.4rem;
+}
+
+#About .iconsAbout {
+  margin-top: 2.5rem;
+  margin-left: -2rem;
+}
+
+#About .iconsAbout ul {
+  display: flex;
+  list-style: none;
+  margin-left: 0.5rem;
+  gap: 2rem;
+}
+
+#About .iconsAbout a {
+  padding-left: 1.5rem;
+}
+
+.resume {
+  margin-top: 3rem;
+}
+
+.resume button:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
+.resume button:active {
+  background-color: #1b50d4;
+  color: #fff;
+}
+
+.resume button:disabled {
+  background-color: #fff;
+  color: grey;
+}
+
+#About .info {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  margin-top: -9rem;
+}
+
+#About .other h5 {
+  height: 1.5rem;
+  margin-left: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #000;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+#About .info .inline h5 {
+  height: 1.5rem;
+  margin-left: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 650;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #000;
+}
+
+#About .info .inline .arrow {
+  margin-top: 0.4rem;
+  margin-right: 2.3rem;
+  position: relative;
+  left: 310px;
+  bottom: 25px;
+}
+
+#About .languages ul {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  list-style: none;
+}
+
+#About .languages .background {
+  width: 80%;
+  height: 4.17rem;
+  background: #f7f7f9;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 2.3rem;
+}
+
+#About .languages .background .e {
+  padding: 0.5rem;
+}
+
+#About .background a {
+  position: relative;
+  left: 6px;
+  bottom: 28px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: hsl(218, 41%, 25%);
+}
+
+#About .other {
+  margin-bottom: 6rem;
+  margin-top: -8rem;
+}
+
+#About .other hr {
+  width: 80%;
+  margin-left: 2.3rem;
+  background: #dfe1e6;
+}
+
+#About .other img {
+  margin-top: 0.4rem;
+  margin-right: 2.5rem;
+  position: relative;
+  left: 310px;
+  bottom: 37px;
 }
