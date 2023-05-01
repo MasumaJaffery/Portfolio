@@ -207,12 +207,32 @@ a {
 }
 
 .tags .hash {
+  list-style: none;
+  text-align: center;
+}
+
+.tags .hash li {
+  display: inline-block;
+}
+
+.tags .hash li:first-child {
+  float: left;
+}
+
+.tags .hash li:last-child {
+  float: right;
+}
+
+
+/*
+.tags .hash {
   display: flex;
   list-style: none;
   padding-right: 4.5rem;
   gap: 0.5rem;
   margin-left: 0.2rem;
 }
+*/
 
 .tags .hash .HTML {
   padding: 4px 12px;
