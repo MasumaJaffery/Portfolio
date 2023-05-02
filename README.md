@@ -154,11 +154,17 @@ You can deploy this project using: GitHub Pages,
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
+👤 **Syeda Masuma Fatima**
 
 - GitHub: [@MasumaJaffery](https://github.com/MasumaJaffery)
 - Twitter: [@MasumaJaffery](https://twitter.com/MasumaJaffery)
 - LinkedIn: [Masuma Jaffery](https://www.linkedin.com/in/masuma-jaffery-797a29256/)
+
+👤 **Nitcelis Bravo**
+
+- GitHub: [Nitcelis Bravo](https://github.com/NitBravoA92)
+- Twitter: [@softwareDevOne](https://twitter.com/softwareDevOne)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nitcelis-bravo-alcala-b65340158)
 
 <!-- FUTURE FEATURES -->
 
