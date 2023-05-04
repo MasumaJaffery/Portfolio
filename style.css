@@ -860,6 +860,12 @@ footer #contact-form .contact-details p {
   align-items: center;
   color: #172b4d;
   padding-left: 5%;
+  transition: all 0.5s ease-in-out;
+}
+
+#contact-form .form input:hover,
+#contact-form .form input:active {
+  transform: translateY(5px);
 }
 
 #contact-form .form .container {
@@ -876,12 +882,18 @@ footer #contact-form .contact-details p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1rem;
   line-height: 24px;
   border: none;
   width: 90%;
   padding: 1rem;
   height: -webkit-fill-available;
+  transition: all 0.5s ease-in-out;
+}
+
+#contact-form .form textarea:hover,
+#contact-form .form textarea:active {
+  transform: translateY(5px);
 }
 
 .someter button:hover {
