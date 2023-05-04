@@ -12,7 +12,7 @@ body {
 }
 
 main {
-  width: 375px;
+  width: 100%;
   height: auto;
   overflow-x: hidden;
 }
@@ -52,9 +52,13 @@ a {
   padding-right: 0.5rem;
 }
 
+header .desktop-nav {
+  display: none;
+}
+
 #headline {
   background-image: url("Images/header.png");
-  background-size: 375px;
+  background-size: 100%;
   height: 718px;
   background-repeat: no-repeat;
   flex-direction: column;
@@ -148,15 +152,27 @@ a {
   border-radius: 0.5rem;
 }
 
+.work-card .desktop-img,
+.work-card-2 .desktop-img-2,
+.work-card-3 .desktop-img-3,
+.work-card-4 .desktop-img-4 {
+  display: none;
+}
+
 .work-card h2 {
   width: 100%;
-  height: 36px;
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
   line-height: 44px;
   color: #172b4d;
   margin-left: 0.2rem;
+}
+
+.work-card-2 .h2-desktop,
+.work-card-3 .h2-desktop,
+.work-card-4 .h2-desktop {
+  display: none;
 }
 
 .work-card .align {
@@ -192,6 +208,13 @@ a {
   margin-left: 2rem;
 }
 
+.work-card .align-desktop,
+.work-card-2 .align-desktop,
+.work-card-3 .align-desktop,
+.work-card-4 .align-desktop {
+  display: none;
+}
+
 .work-card p {
   width: 100%;
   font-style: normal;
@@ -200,10 +223,20 @@ a {
   line-height: 24px;
   color: #344563;
   margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.work-card .p-desktop,
+.work-card-2 .p-desktop,
+.work-card-3 .p-desktop,
+.work-card-4 .p-desktop {
+  display: none;
 }
 
 .tags {
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 .tags .hash {
@@ -256,6 +289,13 @@ a {
   line-height: 1rem;
   letter-spacing: 0.03em;
   color: #6070ff;
+}
+
+.work-card .tags-desktop,
+.work-card-2 .tags-desktop,
+.work-card-3 .tags-desktop,
+.work-card-4 .tags-desktop {
+  display: none;
 }
 
 .submit {
@@ -365,7 +405,7 @@ a {
 
 .work-card-2 h2 {
   width: 100%;
-  height: 2rem;
+  height: 3rem;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -415,6 +455,8 @@ a {
   line-height: 24px;
   color: #344563;
   margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .work-card-3 {
@@ -442,7 +484,6 @@ a {
 
 .work-card-3 h2 {
   width: 100%;
-  height: 36px;
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
@@ -492,6 +533,8 @@ a {
   line-height: 24px;
   color: #344563;
   margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .work-card-4 {
@@ -519,7 +562,7 @@ a {
 
 .work-card-4 h2 {
   width: 100%;
-  height: 2rem;
+  height: 3rem;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -569,6 +612,8 @@ a {
   line-height: 24px;
   color: #344563;
   margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
 }
 
 #About,
@@ -684,13 +729,14 @@ a {
   font-size: 1.25rem;
   line-height: 1.5rem;
   color: #000;
+  width: 100%;
 }
 
 #About .info .inline .arrow {
   margin-top: 0.4rem;
   margin-right: 2.3rem;
   position: relative;
-  left: 310px;
+  left: 80%;
   bottom: 25px;
 }
 
@@ -738,7 +784,7 @@ a {
   margin-top: 0.4rem;
   margin-right: 2.5rem;
   position: relative;
-  left: 310px;
+  left: 80%;
   bottom: 37px;
 }
 
@@ -774,7 +820,7 @@ footer #contact-form .contact-details h2 {
 }
 
 footer #contact-form .contact-details p {
-  width: 327px;
+  width: 80%;
   height: 137px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -795,7 +841,7 @@ footer #contact-form .contact-details p {
 #contact-form .form input {
   margin-bottom: 15px;
   height: 48px;
-  width: 300px;
+  width: 90%;
   background: #fff;
   border: 1px solid #cdd8dc;
   border-radius: 8px;
@@ -820,15 +866,16 @@ footer #contact-form .contact-details p {
   background-color: #fff;
 }
 
-#contact-form .form .container textarea {
+#contact-form .form textarea {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   border: none;
-  width: 264px;
-  height: 171px;
+  width: 90%;
+  padding: 1rem;
+  height: -webkit-fill-available;
 }
 
 .someter button:hover {
