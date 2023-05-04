@@ -38,6 +38,17 @@ h4 {
   color: #6070ff;
   margin: 0.625rem;
   padding-left: 0.5rem;
+  animation: rotato 5s alternate ease-in-out 1s;
+}
+
+@keyframes rotato {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 a {
