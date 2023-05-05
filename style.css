@@ -724,7 +724,7 @@ header .desktop-nav {
 
 #About .other h5 {
   height: 1.5rem;
-  margin-left: 2.5rem;
+  margin-left: 1.8rem;
   font-style: normal;
   font-weight: 600;
   font-size: 1.25rem;
@@ -736,7 +736,7 @@ header .desktop-nav {
 
 #About .info .inline h5 {
   height: 1.5rem;
-  margin-left: 2.5rem;
+  margin-left: 1.8rem;
   font-style: normal;
   font-weight: 650;
   font-size: 1.25rem;
@@ -749,7 +749,7 @@ header .desktop-nav {
   margin-top: 0.4rem;
   margin-right: 2.3rem;
   position: relative;
-  left: 80%;
+  left: 87%;
   bottom: 25px;
 }
 
@@ -759,12 +759,12 @@ header .desktop-nav {
 }
 
 #About .languages .background {
-  width: 80%;
+  width: 90%;
   height: 4.17rem;
   background: #f7f7f9;
   border-radius: 0.5rem;
   margin-top: 1rem;
-  margin-left: 2.3rem;
+  margin-left: 1rem;
 }
 
 #About .languages .background .e {
@@ -783,13 +783,14 @@ header .desktop-nav {
 }
 
 #About .other {
-  margin-bottom: 6rem;
+  margin-bottom: 14rem;
   margin-top: -8rem;
 }
 
 #About .other hr {
-  width: 80%;
-  margin-left: 2.3rem;
+  width: 87%;
+  margin-left: 1.8rem;
+  margin-right: 1.8rem;
   background: #dfe1e6;
 }
 
@@ -797,7 +798,7 @@ header .desktop-nav {
   margin-top: 0.4rem;
   margin-right: 2.5rem;
   position: relative;
-  left: 80%;
+  left: 87%;
   bottom: 37px;
 }
 
@@ -809,6 +810,7 @@ footer #contact-form {
   width: 100%;
   height: 779px;
   overflow-x: hidden;
+  padding-bottom: 4rem;
 }
 
 footer #contact-form .contact-details {
@@ -825,6 +827,8 @@ footer #contact-form .contact-details h2 {
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   line-height: 52px;
   display: flex;
   align-items: center;
@@ -835,6 +839,7 @@ footer #contact-form .contact-details h2 {
 footer #contact-form .contact-details p {
   width: 80%;
   height: 137px;
+  margin-bottom: 1.5rem;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -919,21 +924,6 @@ footer #contact-form .contact-details p {
 }
 
 @media only screen and (min-width: 768px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    background-color: #e5e5e5;
-  }
-
-  main {
-    width: fit-content;
-    height: auto;
-  }
-
   header .mobile-nav {
     display: none;
   }
@@ -950,7 +940,7 @@ footer #contact-form .contact-details p {
   .content a {
     position: absolute;
     left: 0.8rem;
-    top: 25.5rem;
+    top: 24rem;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -986,7 +976,6 @@ footer #contact-form .contact-details p {
 
   .icons ul {
     margin-left: 8rem;
-    margin-top: -0.6rem;
     display: flex;
     list-style: none;
   }
@@ -1018,10 +1007,11 @@ footer #contact-form .contact-details p {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    margin-bottom: 9rem;
   }
 
   .content h1 {
-    width: 60%;
+    width: 40%;
     height: auto;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1278,10 +1268,6 @@ footer #contact-form .contact-details p {
     color: grey;
   }
 
-  #About .Aboutcontent .resume {
-    margin-top: 1rem;
-  }
-
   .work-card .work-detials .submit button,
   .work-card-3 .work-detials .submit button {
     display: flex;
@@ -1300,6 +1286,55 @@ footer #contact-form .contact-details p {
     letter-spacing: 0.03em;
     color: #396df2;
     margin-top: 2rem;
+  }
+
+  .work-card-2 .work-detials .submit button,
+  .work-card-4 .work-detials .submit button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10px;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #396df2;
+    margin-top: 1.5rem;
+  }
+
+  .work-card .work-detials .submit button:hover,
+  .work-card-2 .work-detials .submit button:hover,
+  .work-card-3 .work-detials .submit button:hover,
+  .work-card-4 .work-detials .submit button:hover {
+    background-color: #396df2;
+    color: #fff;
+  }
+
+  .work-card .work-detials .submit button:active,
+  .work-card-2 .work-detials .submit button:active,
+  .work-card-3 .work-detials .submit button:active,
+  .work-card-4 .work-detials .submit button:active {
+    background-color: #1b50d4;
+    color: #fff;
+  }
+
+  .work-card .work-detials .submit button:disabled,
+  .work-card-2 .work-detials .submit button:disabled,
+  .work-card-3 .work-detials .submit button:disabled,
+  .work-card-4 .work-detials .submit button:disabled {
+    background-color: #fff;
+    color: grey;
+  }
+
+  #About .Aboutcontent .resume {
+    margin-top: 1rem;
   }
 
   #work .work-card-2 {
@@ -1510,27 +1545,6 @@ footer #contact-form .contact-details p {
     border-radius: 8px;
     order: 2;
     flex-grow: 0;
-  }
-
-  .work-card-2 .work-detials .submit button,
-  .work-card-4 .work-detials .submit button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 10px;
-    padding: 12px;
-    background-color: #fff;
-    border: 1px solid #6070ff;
-    border-radius: 8px;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #396df2;
-    margin-top: 1.5rem;
   }
 
   #work .work-card-3 {
@@ -1896,12 +1910,12 @@ footer #contact-form .contact-details p {
     background-size: cover;
     width: 100%;
     height: auto;
-    padding-bottom: 10rem;
+    padding-bottom: 14rem;
   }
 
   #About .Aboutcontent {
     padding-top: 8rem;
-    margin-left: 5rem;
+    margin-left: 10rem;
   }
 
   #About .Aboutcontent h3 {
@@ -1966,27 +1980,25 @@ footer #contact-form .contact-details p {
   }
 
   #About .inline h5 {
+    margin-left: 2rem;
     height: 1.5rem;
     color: #344563;
-    margin-left: 0.4rem;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     font-weight: 650;
     font-size: 1.25rem;
-    line-height: 1.5rem;
   }
 
   #About .info .inline .arrow {
     margin-top: 0.4rem;
     margin-right: 2.3rem;
     position: relative;
-    left: 90%;
+    left: 130%;
     bottom: 25px;
   }
 
   #About .languages ul {
     display: flex;
     list-style: none;
+    margin-left: 1rem;
   }
 
   #About .languages .background {
@@ -2029,7 +2041,7 @@ footer #contact-form .contact-details p {
   }
 
   #About .other hr {
-    width: 90%;
+    width: 130%;
     margin-left: 2.3rem;
     background: #dfe1e6;
   }
@@ -2038,12 +2050,13 @@ footer #contact-form .contact-details p {
     margin-top: 0.4rem;
     margin-right: 2.5rem;
     position: relative;
-    left: 90%;
+    left: 130%;
     bottom: 37px;
   }
 
   footer #contact-form {
     margin-top: -5rem;
+    padding: 2rem;
     display: grid;
     background-image: url("Images/Footer_Desktop.png");
     background-size: cover;
@@ -2083,13 +2096,14 @@ footer #contact-form .contact-details p {
     color: #ebebff;
     display: flex;
     align-items: center;
+    margin-top: -1.6rem;
   }
 
   #contact-form .form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: -1rem;
   }
 
   #contact-form .form input {
@@ -2108,7 +2122,7 @@ footer #contact-form .contact-details p {
     align-items: center;
     color: #172b4d;
     padding-left: 5%;
-    margin-left: -6.5rem;
+    margin-left: -6.8rem;
   }
 
   #contact-form .form textarea {
@@ -2123,7 +2137,7 @@ footer #contact-form .contact-details p {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    margin-left: -6.5rem;
+    margin-left: -6.8rem;
   }
 
   #contact-form .form .someter button {
