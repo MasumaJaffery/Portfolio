@@ -157,10 +157,18 @@ header .desktop-nav {
   border-radius: 1rem;
 }
 
+.work-card .work-img,
+.work-card-1 .work-img,
+.work-card-2 .work-img,
+.work-card-3 .work-img {
+  width: 100%;
+  height: 220px;
+}
+
 .work-card .img1,
-.work-card-1 .img2,
-.work-card-2 .img3,
-.work-card-3 .img4 {
+.work-card-2 .img2,
+.work-card-3 .img3,
+.work-card-4 .img4 {
   width: 100%;
   height: 220px;
   object-fit: cover;
@@ -556,7 +564,6 @@ header .desktop-nav {
 }
 
 #work .work-card-4 {
-  align-items: center;
   padding: 1rem;
   gap: 12px;
   width: 100%;
@@ -942,7 +949,8 @@ footer #contact-form .contact-details p {
 
   .content a {
     position: absolute;
-    left: 5rem;
+    left: 0.8rem;
+    top: 25.5rem;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -977,8 +985,8 @@ footer #contact-form .contact-details p {
   }
 
   .icons ul {
-    margin-left: 12rem;
-    margin-top: 3rem;
+    margin-left: 8rem;
+    margin-top: -0.6rem;
     display: flex;
     list-style: none;
   }
@@ -1007,25 +1015,24 @@ footer #contact-form .contact-details p {
   #headline {
     background-image: url("Images/Header_Desktop.png");
     background-size: 100%;
-    height: 916px;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
   }
 
   .content h1 {
-    width: 50%;
+    width: 60%;
     height: auto;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 56px;
+    font-size: 3rem;
     line-height: 66px;
     display: flex;
     align-items: center;
     letter-spacing: 0.37px;
     color: #091e42;
-    margin: 11rem 1rem 2rem 12rem;
+    margin: 5rem 1rem 2rem 8rem;
     padding-top: 5rem;
   }
 
@@ -1037,7 +1044,7 @@ footer #contact-form .contact-details p {
     font-size: 20px;
     line-height: 28px;
     color: #344563;
-    margin: -2rem 1rem auto 12rem;
+    margin: -3rem 1rem 2rem 8rem;
     padding-top: 1rem;
   }
 
@@ -1051,6 +1058,7 @@ footer #contact-form .contact-details p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 1rem;
   }
 
   #work .work-card {
@@ -1063,7 +1071,7 @@ footer #contact-form .contact-details p {
     align-items: center;
     justify-content: center;
     margin-bottom: 5rem;
-    gap: 3rem;
+    column-gap: 1rem;
   }
 
   .work-card .img1,
@@ -1073,15 +1081,18 @@ footer #contact-form .contact-details p {
     display: none;
   }
 
-  .work-card .work-img {
-    width: 75%;
+  .work-card .work-img,
+  .work-card-2 .work-img,
+  .work-card-3 .work-img,
+  .work-card-4 .work-img {
+    width: 100%;
+    height: 468px;
   }
 
   .work-card .desktop-img {
     display: block;
     width: 100%;
-    height: 448px;
-    margin-left: 1.5rem;
+    height: 100%;
     transition: all 0.8s ease-in-out;
   }
 
@@ -1091,7 +1102,7 @@ footer #contact-form .contact-details p {
 
   .work-card .work-detials {
     margin-bottom: 10rem;
-    width: 80%;
+    width: 50%;
   }
 
   .work-card .work-detials h2 {
@@ -1306,14 +1317,10 @@ footer #contact-form .contact-details p {
     display: none;
   }
 
-  .work-card-2 .work-img {
-    width: 75%;
-    margin-right: 1rem;
-  }
-
   .work-card-2 .desktop-img-2 {
     display: block;
-    height: 448px;
+    height: 100%;
+    width: 100%;
     transition: all 0.8s ease-in-out;
   }
 
@@ -1322,7 +1329,7 @@ footer #contact-form .contact-details p {
   }
 
   .work-card-2 .work-detials {
-    padding: 1rem;
+    width: 50%;
     margin-bottom: 10rem;
     margin-top: 1rem;
   }
@@ -1382,7 +1389,6 @@ footer #contact-form .contact-details p {
   }
 
   .work-card-2 .work-detials .align-desktop ul li {
-    width: 120px;
     height: 24px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1435,7 +1441,7 @@ footer #contact-form .contact-details p {
     align-items: center;
     font-family: 'Poppins', sans-serif;
     gap: 1rem;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
   }
 
   .work-card-2 .work-detials .tags-desktop .hash .HTML {
@@ -1537,19 +1543,13 @@ footer #contact-form .contact-details p {
     align-items: center;
     justify-content: center;
     margin-bottom: 5rem;
-    gap: 3rem;
     margin-top: 5rem;
-  }
-
-  .work-card-3 .work-img {
-    width: 75%;
   }
 
   .work-card-3 .desktop-img-3 {
     display: block;
     width: 100%;
-    height: 448px;
-    margin-left: 1.5rem;
+    height: 100%;
     transition: all 0.8s ease-in-out;
   }
 
@@ -1561,7 +1561,7 @@ footer #contact-form .contact-details p {
     padding: 1rem;
     margin-bottom: 10rem;
     margin-top: 1rem;
-    width: 80%;
+    width: 50%;
   }
 
   .work-card-3 .work-detials .h2-desktop {
@@ -1721,11 +1721,6 @@ footer #contact-form .contact-details p {
     justify-content: center;
   }
 
-  .work-card-4 .work-img {
-    width: 75%;
-    margin-right: 1rem;
-  }
-
   .work-card-4 .desktop-img-4 {
     display: block;
     width: 100%;
@@ -1738,8 +1733,8 @@ footer #contact-form .contact-details p {
   }
 
   .work-card-4 .work-detials {
-    padding: 1rem;
     margin-bottom: 10rem;
+    width: 50%;
   }
 
   .work-card-4 .work-detials .h2-desktop {
@@ -1823,7 +1818,7 @@ footer #contact-form .contact-details p {
     align-items: center;
     font-family: 'Poppins', sans-serif;
     gap: 1rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
   }
 
   .work-card-4 .work-detials .tags-desktop .hash .HTML {
@@ -1906,7 +1901,7 @@ footer #contact-form .contact-details p {
 
   #About .Aboutcontent {
     padding-top: 8rem;
-    margin-left: 10rem;
+    margin-left: 5rem;
   }
 
   #About .Aboutcontent h3 {
@@ -1954,7 +1949,7 @@ footer #contact-form .contact-details p {
 
   #About .info {
     margin-top: 9.5rem;
-    margin-right: 10rem;
+    margin-right: 5rem;
   }
 
   #About .other h5 {
@@ -1985,18 +1980,17 @@ footer #contact-form .contact-details p {
     margin-top: 0.4rem;
     margin-right: 2.3rem;
     position: relative;
-    left: 500px;
+    left: 90%;
     bottom: 25px;
   }
 
   #About .languages ul {
     display: flex;
-    gap: 1rem;
     list-style: none;
   }
 
   #About .languages .background {
-    width: 28%;
+    width: 110px;
     height: 7rem;
     background: #f7f7f9;
     border-radius: 0.5rem;
@@ -2026,7 +2020,7 @@ footer #contact-form .contact-details p {
   #About .info .languages .background .css {
     display: block;
     position: inherit;
-    margin-left: -3.5rem;
+    margin-left: -2.5rem;
   }
 
   #About .other {
@@ -2035,7 +2029,7 @@ footer #contact-form .contact-details p {
   }
 
   #About .other hr {
-    width: 500px;
+    width: 90%;
     margin-left: 2.3rem;
     background: #dfe1e6;
   }
@@ -2044,7 +2038,7 @@ footer #contact-form .contact-details p {
     margin-top: 0.4rem;
     margin-right: 2.5rem;
     position: relative;
-    left: 500px;
+    left: 90%;
     bottom: 37px;
   }
 
@@ -2114,7 +2108,7 @@ footer #contact-form .contact-details p {
     align-items: center;
     color: #172b4d;
     padding-left: 5%;
-    margin-left: -7rem;
+    margin-left: -6.5rem;
   }
 
   #contact-form .form textarea {
@@ -2129,7 +2123,7 @@ footer #contact-form .contact-details p {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    margin-left: -7rem;
+    margin-left: -6.5rem;
   }
 
   #contact-form .form .someter button {
