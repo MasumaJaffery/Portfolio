@@ -810,7 +810,7 @@ footer #contact-form {
   width: 100%;
   height: 779px;
   overflow-x: hidden;
-  padding-bottom: 4rem;
+  padding-bottom: 8rem;
 }
 
 footer #contact-form .contact-details {
@@ -1011,7 +1011,7 @@ footer #contact-form .contact-details p {
   }
 
   .content h1 {
-    width: 40%;
+    width: 50%;
     height: auto;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
