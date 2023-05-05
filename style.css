@@ -940,7 +940,7 @@ footer #contact-form .contact-details p {
   .content a {
     position: absolute;
     left: 0.8rem;
-    top: 24rem;
+    top: 27rem;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -1008,6 +1008,7 @@ footer #contact-form .contact-details p {
     display: flex;
     flex-direction: column;
     margin-bottom: 9rem;
+    height: 900px;
   }
 
   .content h1 {
@@ -1022,7 +1023,7 @@ footer #contact-form .contact-details p {
     align-items: center;
     letter-spacing: 0.37px;
     color: #091e42;
-    margin: 5rem 1rem 2rem 8rem;
+    margin: 8rem 1rem 2rem 8rem;
     padding-top: 5rem;
   }
 
