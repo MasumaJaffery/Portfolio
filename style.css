@@ -851,7 +851,6 @@ footer #contact-form .contact-details {
 }
 
 footer #contact-form .contact-details h2 {
-  height: 56px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -867,7 +866,6 @@ footer #contact-form .contact-details h2 {
 
 footer #contact-form .contact-details p {
   width: 80%;
-  height: 137px;
   margin-bottom: 1.5rem;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -880,9 +878,10 @@ footer #contact-form .contact-details p {
   align-items: center;
 }
 
-#contact-form .form {
-  margin-top: 1rem;
-  margin-left: 10%;
+#contact-form .form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #contact-form .form input {
@@ -1269,7 +1268,6 @@ footer #contact-form .contact-details p {
     text-align: center;
     letter-spacing: 0.03em;
     color: #396df2;
-    margin: 1rem 1rem 10rem 10rem;
     display: flex;
     align-items: center;
   }
@@ -2121,7 +2119,8 @@ footer #contact-form .contact-details p {
     color: #ebebff;
     display: flex;
     align-items: center;
-    margin-top: -1.6rem;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
   }
 
   #contact-form .form {
@@ -2147,7 +2146,6 @@ footer #contact-form .contact-details p {
     align-items: center;
     color: #172b4d;
     padding-left: 5%;
-    margin-left: -6.8rem;
   }
 
   #contact-form .form textarea {
@@ -2162,11 +2160,9 @@ footer #contact-form .contact-details p {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    margin-left: -6.8rem;
   }
 
   #contact-form .form .someter button {
-    margin-left: 3rem;
     padding-left: 8px;
   }
 }
