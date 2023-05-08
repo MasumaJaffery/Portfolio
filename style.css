@@ -19,8 +19,7 @@ main {
 
 header .mobile-nav,
 h4,
-#headline,
-.content h1 {
+#headline {
   display: flex;
 }
 
@@ -51,7 +50,7 @@ h4 {
   }
 }
 
-a {
+.mobile-nav a {
   text-decoration: none;
   text-align: center;
   justify-content: center;
@@ -75,25 +74,43 @@ header .desktop-nav {
   flex-direction: column;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+  margin-top: 25%;
+  padding: 0 5%;
+}
+
 .content h1 {
-  padding-top: 9.5rem;
-  padding-left: 2rem;
   width: 100%;
   font-style: normal;
   font-weight: 1000;
   font-size: 40px;
   line-height: 52px;
   flex-wrap: wrap;
-  align-items: center;
   color: #172b4d;
   flex: none;
   order: 0;
+  animation: Slide 2s infinite ease-out 1s;
+}
+
+@keyframes Slide {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(15px);
+  }
 }
 
 .content p {
-  display: block;
-  padding: 1rem 0.5rem 1rem 2rem;
+  display: flex;
   width: 100%;
+  flex-wrap: wrap;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -107,25 +124,32 @@ header .desktop-nav {
 .content a {
   text-decoration: none;
   width: 100%;
-  margin-left: 2rem;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.5rem;
   color: #7f8cff;
   flex: none;
-  order: 0;
+  order: 3;
   flex-grow: 0;
 }
 
 .icons {
-  padding-top: 1rem;
-  padding-left: 1rem;
+  order: 4;
+  margin-left: -1rem;
 }
 
 .icons ul {
   list-style: none;
   display: flex;
+}
+
+.icons ul li {
+  transition: all 1s ease-out;
+}
+
+.icons ul li:hover {
+  transform: scale(1.3);
 }
 
 .icons a {
@@ -139,9 +163,11 @@ header .desktop-nav {
 
 #work {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, 1fr);
   margin: 20px;
-  padding-top: 5rem;
+  justify-content: center;
+  gap: 2%;
+  padding-top: 20%;
 }
 
 #work .work-card {
@@ -154,6 +180,7 @@ header .desktop-nav {
   height: 552px;
   background: #fff;
   border: 1px solid #def1e6;
+  box-shadow: 5px 5px 10px 5px  rgb(217, 213, 213, 0.5);
   border-radius: 1rem;
 }
 
@@ -189,6 +216,13 @@ header .desktop-nav {
 .work-card-3 .desktop-img-3,
 .work-card-4 .desktop-img-4 {
   display: none;
+}
+
+.work-card .work-detials,
+.work-card-2 .work-detials,
+.work-card-3 .work-detials,
+.work-card-4 .work-detials {
+  margin-bottom: 0 !important;
 }
 
 .work-card h2 {
@@ -229,15 +263,14 @@ header .desktop-nav {
 }
 
 .work-card .align ul li {
-  width: 88px;
-  height: 1rem;
+  width: fit-content;
+  height: auto;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 1rem;
   color: #7a869a;
-  justify-content: space-between;
-  margin-left: 2rem;
+  margin-left: 0.9rem;
 }
 
 .work-card .align-desktop,
@@ -355,22 +388,20 @@ header .desktop-nav {
   margin-top: 0.6rem;
 }
 
-.resume button {
+.resume {
   box-sizing: border-box;
   padding: 12px;
-  margin-left: 1.5rem;
   border: 1px solid #6070ff;
   border-radius: 8px;
   background-color: #fff;
   font-style: normal;
+  margin-top: 1.5rem;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5rem;
   text-align: center;
   letter-spacing: 0.03em;
   color: #396df2;
-  margin-right: 10rem;
-  margin-top: 1.5rem;
 }
 
 .someter button {
@@ -411,7 +442,6 @@ header .desktop-nav {
 .work-card-2 {
   display: flex;
   flex-direction: column;
-  margin-top: 4rem;
 }
 
 #work .work-card-2 {
@@ -422,6 +452,7 @@ header .desktop-nav {
   height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
+  box-shadow: 5px 5px 10px 5px  rgb(217, 213, 213, 0.5);
   border-radius: 1rem;
 }
 
@@ -462,15 +493,14 @@ header .desktop-nav {
 }
 
 .work-card-2 .align ul li {
-  width: 88px;
-  height: 1rem;
+  width: fit-content;
+  height: auto;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 1rem;
   color: #7a869a;
-  justify-content: space-between;
-  margin-left: 2rem;
+  margin-left: 0.9rem;
 }
 
 .work-card-2 p {
@@ -499,6 +529,8 @@ header .desktop-nav {
   height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
+  border: 1px solid rgb(217, 213, 213);
+  box-shadow: 5px 5px 10px 5px  rgb(217, 213, 213, 0.5);
   border-radius: 1rem;
 }
 
@@ -534,15 +566,14 @@ header .desktop-nav {
 }
 
 .work-card-3 .align ul li {
-  width: 5.5rem;
-  height: 1rem;
+  width: fit-content;
+  height: auto;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 1rem;
   color: #7a869a;
-  justify-content: space-between;
-  margin-left: 2rem;
+  margin-left: 0.9rem;
 }
 
 .work-card-3 p {
@@ -570,6 +601,7 @@ header .desktop-nav {
   height: 552px;
   background: #fff;
   border: 1px solid #dfe1e6;
+  box-shadow: 5px 5px 10px 5px  rgb(217, 213, 213, 0.5);
   border-radius: 16px;
 }
 
@@ -606,15 +638,14 @@ header .desktop-nav {
 }
 
 .work-card-4 .align ul li {
-  width: 5.5rem;
-  height: 1rem;
+  width: fit-content;
+  height: auto;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 1rem;
   color: #7a869a;
-  justify-content: space-between;
-  margin-left: 2rem;
+  margin-left: 0.9rem;
 }
 
 .work-card-4 p {
@@ -636,7 +667,7 @@ header .desktop-nav {
 }
 
 #About {
-  margin-top: 6rem;
+  margin-top: 60%;
   background-image: url("Images/self.png");
   background-size: cover;
   width: 100%;
@@ -661,6 +692,7 @@ header .desktop-nav {
   line-height: 3.25rem;
   align-items: center;
   color: #172b4d;
+  order: 0;
 }
 
 #About .Aboutcontent p {
@@ -671,55 +703,57 @@ header .desktop-nav {
   line-height: 1.5rem;
   color: #344563;
   padding-top: 1.2rem;
+  order: 1;
 }
 
 #About .Aboutcontent a {
+  display: grid;
   height: 1.5rem;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   color: #7f8cff;
-  position: absolute;
-  margin-top: 1.4rem;
+  text-decoration: none;
+  margin-top: 0.8rem;
+  order: 2;
 }
 
 #About .iconsAbout {
-  margin-top: 2.5rem;
-  margin-left: -2rem;
+  order: 3;
 }
 
 #About .iconsAbout ul {
   list-style: none;
-  margin-left: 0.5rem;
-  gap: 2rem;
+  margin-left: -1.2rem;
+  margin-top: 0.5rem;
+}
+
+#About .iconsAbout ul li {
+  margin-left: 0.1rem;
+  transition: all 1s ease-out;
+}
+
+#About .iconsAbout ul li:hover {
+  transform: scale(1.2);
 }
 
 #About .iconsAbout a {
   padding-left: 1.5rem;
 }
 
-.resume {
-  margin-top: 3rem;
-}
-
-.resume button:hover {
+.resume:hover {
   background-color: #396df2;
   color: #fff;
 }
 
-.resume button:active {
+.resume:active {
   background-color: #1b50d4;
   color: #fff;
 }
 
-.resume button:disabled {
+.resume:disabled {
   background-color: #fff;
   color: grey;
-}
-
-#About .info {
-  grid-template-rows: repeat(1, 1fr);
-  margin-top: -9rem;
 }
 
 #About .other h5 {
@@ -774,6 +808,7 @@ header .desktop-nav {
 #About .background a {
   position: relative;
   left: 6px;
+  text-decoration: none;
   bottom: 28px;
   font-style: normal;
   font-weight: 700;
@@ -784,7 +819,6 @@ header .desktop-nav {
 
 #About .other {
   margin-bottom: 14rem;
-  margin-top: -8rem;
 }
 
 #About .other hr {
@@ -822,7 +856,6 @@ footer #contact-form .contact-details {
 }
 
 footer #contact-form .contact-details h2 {
-  height: 56px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -838,7 +871,6 @@ footer #contact-form .contact-details h2 {
 
 footer #contact-form .contact-details p {
   width: 80%;
-  height: 137px;
   margin-bottom: 1.5rem;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -851,9 +883,10 @@ footer #contact-form .contact-details p {
   align-items: center;
 }
 
-#contact-form .form {
-  margin-top: 1rem;
-  margin-left: 10%;
+#contact-form .form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #contact-form .form input {
@@ -863,6 +896,7 @@ footer #contact-form .contact-details p {
   background: #fff;
   border: 1px solid #cdd8dc;
   border-radius: 8px;
+  outline: none;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -880,21 +914,13 @@ footer #contact-form .contact-details p {
   transform: translateY(5px);
 }
 
-#contact-form .form .container {
-  padding-left: 5%;
-  padding-top: 5%;
-  height: 200px;
-  width: 90%;
-  border-radius: 2%;
-  border: 1px solid #cdd8dc;
-  background-color: #fff;
-}
-
 #contact-form .form textarea {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
+  border-radius: 2%;
   font-weight: 400;
   font-size: 1rem;
+  outline: none;
   line-height: 24px;
   border: none;
   width: 90%;
@@ -937,19 +963,35 @@ footer #contact-form .contact-details p {
     height: 72px;
   }
 
+  .content h1 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+    color: #091e42;
+    display: inline-flex;
+  }
+
+  .content p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+  }
+
   .content a {
-    position: absolute;
-    left: 0.8rem;
-    top: 27rem;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     width: auto;
-    height: 24px;
-    line-height: 24px;
     text-decoration: none;
     color: #7f8cff;
-    margin: auto auto 2rem 9rem;
+  }
+
+  .content .icons {
+    margin-left: -10rem;
   }
 
   header .desktop-nav a {
@@ -975,7 +1017,7 @@ footer #contact-form .contact-details p {
   }
 
   .icons ul {
-    margin-left: 8rem;
+    margin: 0 9rem;
     display: flex;
     list-style: none;
   }
@@ -1001,47 +1043,26 @@ footer #contact-form .contact-details p {
     margin: 1.5rem;
   }
 
+  header .desktop-nav a:hover,
+  header .desktop-nav a:active {
+    color: #1b50d4;
+  }
+
   #headline {
     background-image: url("Images/Header_Desktop.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    margin-bottom: 9rem;
-    height: 900px;
+    margin-bottom: 2rem;
+    height: 916px;
   }
 
-  .content h1 {
-    width: 50%;
-    height: auto;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 66px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.37px;
-    color: #091e42;
-    margin: 8rem 1rem 2rem 8rem;
-    padding-top: 5rem;
-  }
-
-  .content p {
-    display: block;
-    width: 70%;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    color: #344563;
-    margin: -3rem 1rem 2rem 8rem;
-    padding-top: 1rem;
-  }
-
-  .icons ul li {
-    margin-right: 0.2rem;
-    margin-top: -1rem;
+  .content {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    padding-top: 5%;
   }
 
   #work {
@@ -1062,7 +1083,16 @@ footer #contact-form .contact-details p {
     align-items: center;
     justify-content: center;
     margin-bottom: 5rem;
+    border: 1px solid rgb(217, 213, 213);
+    box-shadow: 5px 5px 10px 5px  rgb(217, 213, 213, 0.5);
     column-gap: 1rem;
+  }
+
+  .work-card .work-detials,
+  .work-card-2 .work-detials,
+  .work-card-3 .work-detials,
+  .work-card-4 .work-detials {
+    margin-bottom: 3.5rem !important;
   }
 
   .work-card .img1,
@@ -1092,12 +1122,10 @@ footer #contact-form .contact-details p {
   }
 
   .work-card .work-detials {
-    margin-bottom: 10rem;
-    width: 50%;
+    width: 100%;
   }
 
   .work-card .work-detials h2 {
-    width: 496px;
     height: 46px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1216,8 +1244,9 @@ footer #contact-form .contact-details p {
     flex-grow: 0;
   }
 
-  .resume button {
+  .resume {
     box-sizing: border-box;
+    width: 30%;
     padding: 12px;
     margin-top: 1.5rem;
     border: 1px solid #6070ff;
@@ -1249,22 +1278,21 @@ footer #contact-form .contact-details p {
     text-align: center;
     letter-spacing: 0.03em;
     color: #396df2;
-    margin: 1rem 1rem 10rem 10rem;
     display: flex;
     align-items: center;
   }
 
-  .resume button:hover {
+  .resume:hover {
     background-color: #396df2;
     color: #fff;
   }
 
-  .resume button:active {
+  .resume:active {
     background-color: #1b50d4;
     color: #fff;
   }
 
-  .resume button:disabled {
+  .resume:disabled {
     background-color: #fff;
     color: grey;
   }
@@ -1336,6 +1364,8 @@ footer #contact-form .contact-details p {
 
   #About .Aboutcontent .resume {
     margin-top: 1rem;
+    width: max-content;
+    order: 5;
   }
 
   #work .work-card-2 {
@@ -1347,6 +1377,8 @@ footer #contact-form .contact-details p {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgb(217, 213, 213);
+    box-shadow: 5px 5px 10px 5px  rgb(217, 213, 213, 0.5);
   }
 
   .work-card-2 .img2 {
@@ -1365,9 +1397,7 @@ footer #contact-form .contact-details p {
   }
 
   .work-card-2 .work-detials {
-    width: 50%;
-    margin-bottom: 10rem;
-    margin-top: 1rem;
+    width: 100%;
   }
 
   .work-card-2 .work-detials h2,
@@ -1378,8 +1408,8 @@ footer #contact-form .contact-details p {
 
   .work-card-2 .work-detials .h2-desktop {
     display: flex;
-    width: 496px;
-    height: 46px;
+    height: auto;
+    flex-wrap: wrap;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -1443,7 +1473,6 @@ footer #contact-form .contact-details p {
 
   .work-card-2 .work-detials .p-desktop {
     width: 90%;
-    height: 50px;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Poppins', sans-serif;
@@ -1471,13 +1500,13 @@ footer #contact-form .contact-details p {
 
   .work-card-2 .work-detials .tags-desktop .hash {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     flex-direction: row;
     margin-left: 10px;
     align-items: center;
     font-family: 'Poppins', sans-serif;
     gap: 1rem;
-    margin-top: 3.5rem;
   }
 
   .work-card-2 .work-detials .tags-desktop .hash .HTML {
@@ -1557,8 +1586,9 @@ footer #contact-form .contact-details p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
     margin-top: 5rem;
+    border: 1px solid rgb(217, 213, 213);
+    box-shadow: 5px 5px 10px 5px  rgb(217, 213, 213, 0.5);
   }
 
   .work-card-3 .desktop-img-3 {
@@ -1573,15 +1603,12 @@ footer #contact-form .contact-details p {
   }
 
   .work-card-3 .work-detials {
+    width: 100%;
     padding: 1rem;
-    margin-bottom: 10rem;
-    margin-top: 1rem;
-    width: 50%;
   }
 
   .work-card-3 .work-detials .h2-desktop {
     display: flex;
-    width: 496px;
     height: 46px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1623,12 +1650,11 @@ footer #contact-form .contact-details p {
     font-size: 18px;
     line-height: 24px;
     color: #6b778c;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
   }
 
   .work-card-3 .work-detials .p-desktop {
     width: 90%;
-    height: 50px;
     display: flex;
     flex-wrap: wrap;
     margin-left: 2px;
@@ -1649,12 +1675,12 @@ footer #contact-form .contact-details p {
 
   .work-card-3 .work-detials .tags-desktop .hash {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     flex-direction: row;
     align-items: center;
     font-family: 'Poppins', sans-serif;
     gap: 1rem;
-    padding-top: 2.5rem;
   }
 
   .work-card-3 .work-detials .tags-desktop .hash .HTML {
@@ -1734,12 +1760,14 @@ footer #contact-form .contact-details p {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgb(217, 213, 213);
+    box-shadow: 5px 5px 10px 5px  rgb(217, 213, 213, 0.5);
   }
 
   .work-card-4 .desktop-img-4 {
     display: block;
     width: 100%;
-    height: 448px;
+    height: 464px;
     transition: all 0.8s ease-in-out;
   }
 
@@ -1748,14 +1776,13 @@ footer #contact-form .contact-details p {
   }
 
   .work-card-4 .work-detials {
-    margin-bottom: 10rem;
-    width: 50%;
+    width: 100%;
   }
 
   .work-card-4 .work-detials .h2-desktop {
     display: flex;
-    width: 496px;
-    height: 46px;
+    height: auto;
+    flex-wrap: wrap;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -1805,7 +1832,6 @@ footer #contact-form .contact-details p {
 
   .work-card-4 .work-detials .p-desktop {
     width: 90%;
-    height: 50px;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Poppins', sans-serif;
@@ -1827,13 +1853,13 @@ footer #contact-form .contact-details p {
 
   .work-card-4 .work-detials .tags-desktop .hash {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     flex-direction: row;
     margin-left: 10px;
     align-items: center;
     font-family: 'Poppins', sans-serif;
     gap: 1rem;
-    margin-top: 2rem;
   }
 
   .work-card-4 .work-detials .tags-desktop .hash .HTML {
@@ -1906,33 +1932,40 @@ footer #contact-form .contact-details p {
 
   #About {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 6rem;
     background-image: url("Images/self-desktop1.png");
     background-size: cover;
     width: 100%;
     height: auto;
-    padding-bottom: 14rem;
+  }
+
+  #About .center {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
   }
 
   #About .Aboutcontent {
-    padding-top: 8rem;
-    margin-left: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 3rem;
   }
 
   #About .Aboutcontent h3 {
-    width: 100%;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 3.25rem;
-    display: flex;
     align-items: center;
     color: #172b4d;
+    order: 0;
   }
 
   #About .Aboutcontent p {
-    width: 447px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1941,6 +1974,7 @@ footer #contact-form .contact-details p {
     color: #344563;
     padding-top: 1.2rem;
     padding-bottom: 1rem;
+    order: 1;
   }
 
   #About .Aboutcontent a {
@@ -1951,11 +1985,15 @@ footer #contact-form .contact-details p {
     color: #7f8cff;
     text-decoration: none;
     margin-top: -0.2rem;
+    order: 2;
   }
 
   #About .iconsAbout ul {
     display: flex;
     list-style: none;
+    order: 3;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
   }
 
   #About .iconsAbout a {
@@ -1963,26 +2001,24 @@ footer #contact-form .contact-details p {
   }
 
   #About .info {
-    margin-top: 9.5rem;
-    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 7rem;
+    width: 50%;
+    flex-wrap: wrap;
+    padding-right: 3rem;
   }
 
   #About .other h5 {
     height: 1.5rem;
-    margin-left: 2.5rem;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 1.25rem;
-    line-height: 1.5rem;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
     color: #344563;
   }
 
   #About .inline h5 {
-    margin-left: 2rem;
-    height: 1.5rem;
     color: #344563;
     font-weight: 650;
     font-size: 1.25rem;
@@ -1992,14 +2028,15 @@ footer #contact-form .contact-details p {
     margin-top: 0.4rem;
     margin-right: 2.3rem;
     position: relative;
-    left: 130%;
     bottom: 25px;
   }
 
   #About .languages ul {
     display: flex;
+    flex-direction: row;
     list-style: none;
-    margin-left: 1rem;
+    margin-left: 0.8rem;
+    flex-wrap: wrap;
   }
 
   #About .languages .background {
@@ -2025,7 +2062,7 @@ footer #contact-form .contact-details p {
   }
 
   #About .info .languages .js {
-    margin: 1rem;
+    margin: 0.7rem;
     position: inherit;
   }
 
@@ -2033,25 +2070,18 @@ footer #contact-form .contact-details p {
   #About .info .languages .background .css {
     display: block;
     position: inherit;
-    margin-left: -2.5rem;
+    margin-left: 0.9rem;
   }
 
   #About .other {
     position: relative;
-    top: 8rem;
-  }
-
-  #About .other hr {
-    width: 130%;
-    margin-left: 2.3rem;
-    background: #dfe1e6;
+    top: 2rem;
   }
 
   #About .other img {
     margin-top: 0.4rem;
     margin-right: 2.5rem;
     position: relative;
-    left: 130%;
     bottom: 37px;
   }
 
@@ -2097,7 +2127,8 @@ footer #contact-form .contact-details p {
     color: #ebebff;
     display: flex;
     align-items: center;
-    margin-top: -1.6rem;
+    margin-top: -1.1rem;
+    margin-bottom: 3rem;
   }
 
   #contact-form .form {
@@ -2123,7 +2154,6 @@ footer #contact-form .contact-details p {
     align-items: center;
     color: #172b4d;
     padding-left: 5%;
-    margin-left: -6.8rem;
   }
 
   #contact-form .form textarea {
@@ -2138,11 +2168,9 @@ footer #contact-form .contact-details p {
     font-weight: 400;
     font-size: 15px;
     line-height: 24px;
-    margin-left: -6.8rem;
   }
 
   #contact-form .form .someter button {
-    margin-left: 3rem;
     padding-left: 8px;
   }
 }
