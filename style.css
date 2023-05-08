@@ -964,7 +964,7 @@ footer #contact-form .contact-details p {
   }
 
   .content h1 {
-    width: 100%;
+    width: 82%;
     font-weight: 700;
     font-size: 48px;
     line-height: 60px;
@@ -1061,8 +1061,8 @@ footer #contact-form .contact-details p {
   .content {
     width: 80%;
     margin-left: 10%;
-    margin-top: 10%;
-    padding-top: 5%;
+    margin-top: 8%;
+    padding-top: 2.5%;
   }
 
   #work {
@@ -1075,7 +1075,7 @@ footer #contact-form .contact-details p {
 
   #work .work-card {
     height: 496px;
-    width: 90%;
+    width: 100%;
     background-color: #fff;
     border-radius: 24px;
     display: flex;
