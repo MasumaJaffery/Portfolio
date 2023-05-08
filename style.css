@@ -77,11 +77,11 @@ header .desktop-nav {
 .content {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
-  justify-content: space-around;
-  align-items: flex-start;
-  margin: 0 auto;
-  padding: 114px 24px;
+  gap: 1rem;
+  width: 100%;
+  height: auto;
+  margin-top: 25%;
+  padding: 0 5%;
 }
 
 .content h1 {
@@ -108,6 +108,7 @@ header .desktop-nav {
 }
 
 .content p {
+  display: flex;
   width: 100%;
   flex-wrap: wrap;
   font-style: normal;
@@ -162,9 +163,11 @@ header .desktop-nav {
 
 #work {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, 1fr);
   margin: 20px;
-  padding-top: 5rem;
+  justify-content: center;
+  gap: 2%;
+  padding-top: 20%;
 }
 
 #work .work-card {
@@ -215,6 +218,13 @@ header .desktop-nav {
   display: none;
 }
 
+.work-card .work-detials,
+.work-card-2 .work-detials,
+.work-card-3 .work-detials,
+.work-card-4 .work-detials {
+  margin-bottom: 0 !important;
+}
+
 .work-card h2 {
   width: 100%;
   font-style: normal;
@@ -253,15 +263,14 @@ header .desktop-nav {
 }
 
 .work-card .align ul li {
-  width: 88px;
-  height: 1rem;
+  width: fit-content;
+  height: auto;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 1rem;
   color: #7a869a;
-  justify-content: space-between;
-  margin-left: 2rem;
+  margin-left: 0.9rem;
 }
 
 .work-card .align-desktop,
@@ -433,7 +442,6 @@ header .desktop-nav {
 .work-card-2 {
   display: flex;
   flex-direction: column;
-  margin-top: 4rem;
 }
 
 #work .work-card-2 {
@@ -485,15 +493,14 @@ header .desktop-nav {
 }
 
 .work-card-2 .align ul li {
-  width: 88px;
-  height: 1rem;
+  width: fit-content;
+  height: auto;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 1rem;
   color: #7a869a;
-  justify-content: space-between;
-  margin-left: 2rem;
+  margin-left: 0.9rem;
 }
 
 .work-card-2 p {
@@ -559,15 +566,14 @@ header .desktop-nav {
 }
 
 .work-card-3 .align ul li {
-  width: 5.5rem;
-  height: 1rem;
+  width: fit-content;
+  height: auto;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 1rem;
   color: #7a869a;
-  justify-content: space-between;
-  margin-left: 2rem;
+  margin-left: 0.9rem;
 }
 
 .work-card-3 p {
@@ -632,15 +638,14 @@ header .desktop-nav {
 }
 
 .work-card-4 .align ul li {
-  width: 5.5rem;
-  height: 1rem;
+  width: fit-content;
+  height: auto;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 1rem;
   color: #7a869a;
-  justify-content: space-between;
-  margin-left: 2rem;
+  margin-left: 0.9rem;
 }
 
 .work-card-4 p {
@@ -662,7 +667,7 @@ header .desktop-nav {
 }
 
 #About {
-  margin-top: 6rem;
+  margin-top: 60%;
   background-image: url("Images/self.png");
   background-size: cover;
   width: 100%;
@@ -965,6 +970,7 @@ footer #contact-form .contact-details p {
     line-height: 60px;
     letter-spacing: 0.37px;
     color: #091e42;
+    display: inline-flex;
   }
 
   .content p {
@@ -1037,27 +1043,26 @@ footer #contact-form .contact-details p {
     margin: 1.5rem;
   }
 
+  header .desktop-nav a:hover,
+  header .desktop-nav a:active {
+    color: #1b50d4;
+  }
+
   #headline {
-    background-image: url("Images/header\ background.png");
+    background-image: url("Images/Header_Desktop.png");
     background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    margin-bottom: 9rem;
+    margin-bottom: 2rem;
     height: 916px;
   }
 
-  #headline .shapes {
-    background-image: url("Images/header-shapes-desktop.png");
-    background-size: 95%;
-    background-repeat: no-repeat;
-    height: 43.75rem;
-    background-position: center;
-    margin-top: 5%;
-  }
-
   .content {
-    width: 66%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    padding-top: 5%;
   }
 
   #work {
@@ -1081,6 +1086,13 @@ footer #contact-form .contact-details p {
     border: 1px solid rgb(217, 213, 213);
     box-shadow: 5px 5px 10px 5px  rgb(217, 213, 213, 0.5);
     column-gap: 1rem;
+  }
+
+  .work-card .work-detials,
+  .work-card-2 .work-detials,
+  .work-card-3 .work-detials,
+  .work-card-4 .work-detials {
+    margin-bottom: 3.5rem !important;
   }
 
   .work-card .img1,
@@ -1110,12 +1122,10 @@ footer #contact-form .contact-details p {
   }
 
   .work-card .work-detials {
-    margin-bottom: 10rem;
-    width: 50%;
+    width: 100%;
   }
 
   .work-card .work-detials h2 {
-    width: 496px;
     height: 46px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1354,6 +1364,7 @@ footer #contact-form .contact-details p {
 
   #About .Aboutcontent .resume {
     margin-top: 1rem;
+    width: max-content;
     order: 5;
   }
 
@@ -1386,9 +1397,7 @@ footer #contact-form .contact-details p {
   }
 
   .work-card-2 .work-detials {
-    width: 50%;
-    margin-bottom: 10rem;
-    margin-top: 1rem;
+    width: 100%;
   }
 
   .work-card-2 .work-detials h2,
@@ -1399,8 +1408,8 @@ footer #contact-form .contact-details p {
 
   .work-card-2 .work-detials .h2-desktop {
     display: flex;
-    width: 496px;
-    height: 46px;
+    height: auto;
+    flex-wrap: wrap;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -1577,7 +1586,6 @@ footer #contact-form .contact-details p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
     margin-top: 5rem;
     border: 1px solid rgb(217, 213, 213);
     box-shadow: 5px 5px 10px 5px  rgb(217, 213, 213, 0.5);
@@ -1595,15 +1603,12 @@ footer #contact-form .contact-details p {
   }
 
   .work-card-3 .work-detials {
+    width: 100%;
     padding: 1rem;
-    margin-bottom: 10rem;
-    margin-top: 1rem;
-    width: 50%;
   }
 
   .work-card-3 .work-detials .h2-desktop {
     display: flex;
-    width: 496px;
     height: 46px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1645,7 +1650,7 @@ footer #contact-form .contact-details p {
     font-size: 18px;
     line-height: 24px;
     color: #6b778c;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
   }
 
   .work-card-3 .work-detials .p-desktop {
@@ -1762,7 +1767,7 @@ footer #contact-form .contact-details p {
   .work-card-4 .desktop-img-4 {
     display: block;
     width: 100%;
-    height: 448px;
+    height: 464px;
     transition: all 0.8s ease-in-out;
   }
 
@@ -1771,14 +1776,13 @@ footer #contact-form .contact-details p {
   }
 
   .work-card-4 .work-detials {
-    margin-bottom: 10rem;
-    width: 50%;
+    width: 100%;
   }
 
   .work-card-4 .work-detials .h2-desktop {
     display: flex;
-    width: 496px;
-    height: 46px;
+    height: auto;
+    flex-wrap: wrap;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -1928,25 +1932,26 @@ footer #contact-form .contact-details p {
 
   #About {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 6rem;
     background-image: url("Images/self-desktop1.png");
     background-size: cover;
     width: 100%;
     height: auto;
-    padding-bottom: 14rem;
   }
 
   #About .center {
     display: flex;
     flex-direction: row;
-    padding-right: 4rem;
-    padding-left: 3rem;
+    margin: 0 auto;
   }
 
   #About .Aboutcontent {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 50%;
+    padding-left: 3rem;
   }
 
   #About .Aboutcontent h3 {
@@ -2000,6 +2005,8 @@ footer #contact-form .contact-details p {
     flex-direction: column;
     margin-top: 7rem;
     width: 50%;
+    flex-wrap: wrap;
+    padding-right: 3rem;
   }
 
   #About .other h5 {
@@ -2029,6 +2036,7 @@ footer #contact-form .contact-details p {
     flex-direction: row;
     list-style: none;
     margin-left: 0.8rem;
+    flex-wrap: wrap;
   }
 
   #About .languages .background {
