@@ -28,6 +28,47 @@ header .mobile-nav {
   justify-content: space-between;
 }
 
+header .mobile-nav .toggle {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+header .mobile-nav .invisible {
+  background-color: #6070ff;
+  backdrop-filter: blur(1rem);
+  opacity: 96%;
+  color: #fff;
+  position: fixed;
+  width: -webkit-fill-available;
+  height: 100vh;
+  font-weight: 600;
+  line-height: 40px;
+  font-size: 32px;
+  display: flex;
+  z-index: 1;
+}
+
+.invisible ul {
+  list-style: none;
+  margin: 5rem 3rem;
+}
+
+.invisible ul li {
+  height: 4rem;
+}
+
+.invisible .close {
+  background-color: #6070ff;
+  color: #fff;
+  border: none;
+  position: absolute;
+  left: 87%;
+  top: 5%;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
 h4 {
   width: 100%;
   height: 125%;
