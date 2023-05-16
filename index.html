@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/26c38390b4.js" crossorigin="anonymous"></script>
-    <script src = "index.js"></script>
+    <script src = "index.js" defer></script>
     <link rel = "icon" href = "Images/rainbow-icon-emoji-removebg-preview.ico">
     <link rel="stylesheet" href="style.css">
     <title>Masuma Jaffery's Portfolio</title>
@@ -24,13 +24,13 @@
             </button>
             <nav id = "navigation" class="invisible">
             <div class = "container">
-            <button type = "button" class = "close" onclick="closeMenu()">
+            <button type = "button" class = "close" id = "Closebtn">
             <i class="fa-solid fa-xmark"></i>
             </button>
             <ul>
-            <li class="Navitem" onclick = "itemMenu()"><a class = "link" href = "#work">Portfolio</a></li>
-            <li class="Navitem" onclick = "itemMenu()"><a class = "link" href = "#About">About</a></li>
-            <li class="Navitem"onclick = "itemMenu()"><a class = "link" href = "#contact-form">Contact</a></li>
+            <li class="Navitem" ><a class = "link" href = "#work">Portfolio</a></li>
+            <li class="Navitem" ><a class = "link" href = "#About">About</a></li>
+            <li class="Navitem"><a class = "link" href = "#contact-form">Contact</a></li>
             </ul>
             </div>
             </nav>

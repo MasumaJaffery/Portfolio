@@ -47,6 +47,7 @@ header .mobile-nav .container {
   font-size: 32px;
   display: flex;
   z-index: 1;
+  transition: 0.5s ease-in-out;
 }
 
 .container ul {
