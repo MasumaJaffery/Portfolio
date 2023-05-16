@@ -34,7 +34,7 @@ header .mobile-nav .toggle {
   cursor: pointer;
 }
 
-header .mobile-nav .invisible {
+header .mobile-nav .container {
   background-color: #6070ff;
   backdrop-filter: blur(1rem);
   opacity: 96%;
@@ -49,16 +49,16 @@ header .mobile-nav .invisible {
   z-index: 1;
 }
 
-.invisible ul {
+.container ul {
   list-style: none;
   margin: 5rem 3rem;
 }
 
-.invisible ul li {
+.container ul li {
   height: 4rem;
 }
 
-.invisible .close {
+.container .close {
   background-color: #6070ff;
   color: #fff;
   border: none;
@@ -99,8 +99,10 @@ h4 {
 
 .fa-bars {
   color: #6070ff;
-  margin: 0.625rem;
-  padding-right: 0.5rem;
+  position: absolute;
+  left: 94%;
+  font-size: 1.2rem;
+  bottom: 96%;
 }
 
 header .desktop-nav {
