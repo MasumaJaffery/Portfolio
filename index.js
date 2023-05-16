@@ -1,9 +1,14 @@
-function toggleMenu() {
-  const Menu = document.getElementById('navigation');
-  Menu.classList.toggle('container');
+function toggle() {
+  const toggle = document.getElementById('navigation');
+  toggle.classList.toggle('container');
 }
 
-function closeMenu() {
-  const CloseMenu = document.getElementById('navigation');
-  CloseMenu.classList.remove('container');
+function close() {
+  const close = document.getElementById('navigation');
+  close.classList.remove('container');
+}
+
+function itemMenu() {
+  const Navitem = document.getElementById('navigation');
+  Navitem.classList.remove('container');
 }

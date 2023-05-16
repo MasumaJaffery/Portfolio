@@ -18,18 +18,18 @@
                 <a href="#headline">
                     <h4>My Logo</h4>
                 </a>
-                <button class = "toggle" onclick="toggleMenu()">
+                <button type = "button" class = "toggle" onclick="toggle()">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <nav id = "navigation" class="invisible">
             <div class = "container">
-            <button class = "close" onclick="closeMenu()">
-            <i class="fa-solid fa-xmark" style="color: #ffffff;"></i>
+            <button type = "button" class = "close" onclick="close()">
+            <i class="fa-solid fa-xmark"></i>
             </button>
             <ul>
-            <li class="nav-item">Portfolio</li>
-            <li class="nav-item">About</li>
-            <li class="nav-item">Contact</li>
+            <li class="Navitem" onclick = "itemMenu()"><a class = "link" href = "#work">Portfolio</a></li>
+            <li class="Navitem" onclick = "itemMenu()"><a class = "link" href = "#About">About</a></li>
+            <li class="Navitem"onclick = "itemMenu()"><a class = "link" href = "#contact-form">Contact</a></li>
             </ul>
             </div>
             </nav>
@@ -93,7 +93,7 @@
                         </ul>
                     </div>
                     <div class="submit">
-                        <button>See Project</button>
+                        <button type = "button">See Project</button>
                     </div>
                 </div>
             </div>
@@ -142,7 +142,7 @@
                         </ul>
                     </div>
                     <div class="submit">
-                        <button>See Project</button>
+                        <button type = "button">See Project</button>
                     </div>
                 </div>
             </div>
@@ -187,7 +187,7 @@
                         </ul>
                     </div>
                     <div class="submit">
-                        <button>See Project</button>
+                        <button type = "button" >See Project</button>
                     </div>
                 </div>
             </div>
@@ -235,7 +235,7 @@
                         </ul>
                     </div>
                     <div class="submit">
-                        <button>See Project</button>
+                        <button type = "button" >See Project</button>
                     </div>
                 </div>
             </div>
@@ -259,7 +259,7 @@
                         <li><a href="https://medium.com/@masumajaffery1"><img src="Images/Vector.png"></a></li>
                     </ul>
                     </div>
-                        <button class = "resume">Get my resume</button>
+                        <button type = "button" class = "resume">Get my resume</button>
             </div>
             <div class="info">
                 <div class="inline">
@@ -304,7 +304,7 @@
                         <textarea type="text" placeholder="Write your message here..." rows="10" columns="50"
                                 maxlength="500"></textarea>
                         <div class="someter">
-                            <button>Get in touch</button>
+                            <button type = "submit">Get in touch</button>
                         </div>
                     </form>
                 </div>

@@ -58,6 +58,15 @@ header .mobile-nav .container {
   height: 4rem;
 }
 
+.container ul li .link {
+  color: #fff;
+}
+
+.container ul li .link:hover,
+.container ul li .link:active {
+  color: rgb(216, 236, 255);
+}
+
 .container .close {
   background-color: #6070ff;
   color: #fff;
@@ -885,7 +894,6 @@ footer #contact-form {
   background-image: url("Images/Footer.png");
   background-size: cover;
   width: 100%;
-  height: 779px;
   overflow-x: hidden;
   padding-bottom: 8rem;
 }
