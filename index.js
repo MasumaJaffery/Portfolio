@@ -53,3 +53,37 @@ const Projects = [{
   livelink: 'https://masumajaffery.github.io/Portfolio/'
 }];
 // Use this Objects in Function Below
+const ProjectsCard = document.getElementById('work');
+function show(index) {
+  ProjectsCard.innerHTML += 
+  `<div class="work-card"> 
+  <div class="work-img">
+      <img class="img1" src="${Projects[index].img}">
+  </div>
+  <div class="work-detials">
+      <h2>${Projects[index].title}</h2>
+      <div class="align">
+          <ul>
+              <span>${Projects[index].skill[0]}</span>
+              <li>${Projects[index].skill[1]}<</li>
+              <li>${Projects[index].skill[2]}<</li>
+          </ul>
+      </div>
+      <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+      <div class="tags">
+          <ul class="hash">
+              <li class="HTML">${Projects[index].tech[0]}</li>
+              <li class="CSS">${Projects[index].tech[1]}</li>
+              <li class="JavaScript">${Projects[index].tech[2]}</li>
+          </ul>
+      </div>
+      <div class="submit">
+          <button type = "button" class = "btn">See Project</button>
+      </div>
+  </div>
+</div>`;
+}
+//For Loop to Deal with Array of Objects;
+for(let i = 0; i < Projects.length; i += 1) {
+  show(i);
+}
