@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/26c38390b4.js" crossorigin="anonymous"></script>
+    <script src = "index.js" defer></script>
     <link rel = "icon" href = "Images/rainbow-icon-emoji-removebg-preview.ico">
     <link rel="stylesheet" href="style.css">
     <title>Masuma Jaffery's Portfolio</title>
@@ -17,7 +18,22 @@
                 <a href="#headline">
                     <h4>My Logo</h4>
                 </a>
-                <i class="fa-solid fa-bars"></i>
+                <!---Toggle-->
+            <button type = "button" class = "toggle" id = "Togglebtn" >
+            <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav id = "navigation" class="invisible">
+            <div class = "container">
+            <button type = "button" class = "close" id = "Closebtn">
+            <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul>
+            <li class="Navitem" ><a class = "link" href = "#work">Portfolio</a></li>
+            <li class="Navitem" ><a class = "link" href = "#About">About</a></li>
+            <li class="Navitem"><a class = "link" href = "#contact-form">Contact</a></li>
+            </ul>
+            </div>
+            </nav>
             </nav>
             <nav class="desktop-nav">
                 <a href="#">
@@ -78,7 +94,7 @@
                         </ul>
                     </div>
                     <div class="submit">
-                        <button>See Project</button>
+                        <button type = "button">See Project</button>
                     </div>
                 </div>
             </div>
@@ -127,7 +143,7 @@
                         </ul>
                     </div>
                     <div class="submit">
-                        <button>See Project</button>
+                        <button type = "button">See Project</button>
                     </div>
                 </div>
             </div>
@@ -172,7 +188,7 @@
                         </ul>
                     </div>
                     <div class="submit">
-                        <button>See Project</button>
+                        <button type = "button" >See Project</button>
                     </div>
                 </div>
             </div>
@@ -220,7 +236,7 @@
                         </ul>
                     </div>
                     <div class="submit">
-                        <button>See Project</button>
+                        <button type = "button" >See Project</button>
                     </div>
                 </div>
             </div>
@@ -244,7 +260,7 @@
                         <li><a href="https://medium.com/@masumajaffery1"><img src="Images/Vector.png"></a></li>
                     </ul>
                     </div>
-                        <button class = "resume">Get my resume</button>
+                        <button type = "button" class = "resume">Get my resume</button>
             </div>
             <div class="info">
                 <div class="inline">
@@ -289,7 +305,7 @@
                         <textarea type="text" placeholder="Write your message here..." rows="10" columns="50"
                                 maxlength="500"></textarea>
                         <div class="someter">
-                            <button>Get in touch</button>
+                            <button type = "submit">Get in touch</button>
                         </div>
                     </form>
                 </div>
