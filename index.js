@@ -119,6 +119,7 @@ function PopUp(index) {
       </div>
       <div class = 'desktop-pop'>
       <p>${project.parapop}</p>
+      <div class = "deskpop">
       <div class="tags">
         <ul class="hash">
           <li class="HTML">${project.tech[0]}</li>
@@ -130,6 +131,7 @@ function PopUp(index) {
       <div class="modal-buttons">
       <a href="${project.livelink}"><button type="button" class="see-live">See Live<img src="Images/livelink.svg"></button></a>
       <a href="${project.source}"><button type="button" class="see-source">See Source<img src="Images/blue.png"></button></a>
+      </div>
       </div>
     </div>
     </div>
