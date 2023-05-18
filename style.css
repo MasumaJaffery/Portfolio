@@ -446,6 +446,15 @@ header .desktop-nav {
   color: gray;
 }
 
+
+#PopupDetails {
+  display: block;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: fit-content;
+}
+
 #About,
 #About .info,
 #About .languages ul {

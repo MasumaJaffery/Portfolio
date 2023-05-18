@@ -78,7 +78,7 @@ function show(index) {
           </ul>
       </div>
       <div class="submit">
-          <button type = "button" class = "Popbtn" id = "popupButton">See Project</button>
+          <button type = "button" class = "popup-button" id = "popupButton">See Project</button>
       </div>
   </div>
 </div>`;
@@ -88,3 +88,58 @@ for(let i = 0; i < Projects.length; i += 1) {
   show(i);
 }
 //Pop Up Configurations;
+const PopUpWindow = document.getElementById('PopupDetails');
+
+function PopUp(index) {
+  const project = Projects[index];
+
+  PopUpWindow.innerHTML = `
+    <div class="Modal hidden">
+      <div class="Modal-Title">
+        <h3 class="heading">${project.title}</h3>
+        <button type="button" class="close-btn">
+          <svg width="14" height="14" viewBox="0 0 14 14" class="close-popup" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="close-popup" fill-rule="evenodd" clip-rule="evenodd" d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L7 5.58579L12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41421 7L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7 8.41421L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976311 13.3166 -0.0976311 12.6834 0.292893 12.2929L5.58579 7L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z" fill="#67798E"/>
+          </svg>
+        </button>
+      </div>
+      <div class="align">
+        <ul>
+          <span>${project.skill[0]}</span>
+          <li>${project.skill[1]}</li>
+          <li>${project.skill[2]}</li>
+        </ul>
+      </div>
+      <div class="work-img">
+        <img class="img1" src="${project.img}">
+      </div>
+      <p>${project.para}</p>
+      <div class="tags">
+        <ul class="hash">
+          <li class="HTML">${project.tech[0]}</li>
+          <li class="CSS">${project.tech[1]}</li>
+          <li class="JavaScript">${project.tech[2]}</li>
+        </ul>
+      </div>
+      <div class="modal-buttons">
+        <button type="button" class="see-live"><a href="${project.livelink}">See Live <img src="Images/livelink.svg"></a></button>
+        <button type="button" class="see-source"><a href="${project.source}">See Source <img src="Images/GitHub.png"></a></button>
+      </div>
+    </div>`;
+
+  // Add event listener to close button
+  const closeButton = PopUpWindow.querySelector('.close-btn');
+  closeButton.addEventListener('click', () => {
+    PopUpWindow.innerHTML = ''; // Clear the popup window content
+  });
+}
+
+// Get all the buttons that trigger the popups
+const popupButtons = document.querySelectorAll('.popup-button');
+
+// Add click event listeners to the popup buttons
+popupButtons.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    PopUp(index);
+  });
+});
