@@ -65,8 +65,8 @@ function show(index) {
       <div class="align">
           <ul>
               <span>${Projects[index].skill[0]}</span>
-              <li>${Projects[index].skill[1]}<</li>
-              <li>${Projects[index].skill[2]}<</li>
+              <li>${Projects[index].skill[1]}</li>
+              <li>${Projects[index].skill[2]}</li>
           </ul>
       </div>
       <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
@@ -78,7 +78,7 @@ function show(index) {
           </ul>
       </div>
       <div class="submit">
-          <button type = "button" class = "btn">See Project</button>
+          <button type = "button" class = "Popbtn" id = "popupButton">See Project</button>
       </div>
   </div>
 </div>`;
@@ -87,3 +87,4 @@ function show(index) {
 for(let i = 0; i < Projects.length; i += 1) {
   show(i);
 }
+//Pop Up Configurations;
