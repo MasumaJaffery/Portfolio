@@ -153,4 +153,69 @@ popupButtons.forEach((btn, index) => {
   });
 });
 // Form Validation by JS
-const Form = document.getElementById('form');
+//Form Data Preservation in Browser
+/*
+Short Summary:
+Frist We get Elements by Id from Form Then we create a function getData() to get data from
+it so i create object for data then i return this object, In the next step 
+we create function LocalStorage to setItem(key, value) func in order to set item to Local Storage in order to 
+convert object into string by JSON.stringly, alike,
+window.LocalStorage.JSON.stringly('data-form',Object).  here data-form is arguement! and
+window is used localStorage lives in the browser window enviroment and window is an object of the browser and 
+it's like a chain of objects... that's the reason  we use dot.notation!
+Then we create another function to get data by using getitem, if we got data we convert it into to object by JSON.parse to
+convert it into object. In Last we create function to show data, if every value equal to given value so its function takes place!
+*/
+const name1 = document.getElementById('name');
+const email1 = document.getElementById('email');
+const textarea = document.getElementById('textarea');
+function getData () {
+  const Object = {
+   name: name1.value,
+   email: email1.value,
+   textarea: textarea.value,
+  };
+  return Object;
+}
+function setDataLocalStorage(Object) {
+  // here I convert the object to string because LocalStorage only store primitive type of data like strings, numbers, booleans
+  const convertObject = JSON.stringify(Object);
+  window.localStorage.setItem('data-form', convertObject);
+  //setItem(key,value)
+}
+
+function getDataFromLocalStorage() {
+  // first we check if the object 'data-form' exists in localstorage
+  const dataForm = window.localStorage.getItem('data-form');
+  if(dataForm) {
+    return JSON.parse(dataForm); // we use JSON.parse to convert the string into Object again
+  }
+}
+
+// here you get the data from localStorage when the page Load
+function showData() {
+  const dataFromLocalStorage = getDataFromLocalStorage();
+  if (dataFromLocalStorage) {
+    name1.value = dataFromLocalStorage.name;
+    email1.value = dataFromLocalStorage.email;
+    textarea.value = dataFromLocalStorage.textarea;
+  }
+}
+// here you get your data from the Contact Form
+name1.addEventListener('input', function() {
+  const objectWithTheData = getData();
+  // here you save the data in localStorage
+  setDataLocalStorage(objectWithTheData);
+});
+email1.addEventListener('input', function() {
+  const objectWithTheData = getData();
+  // here you save the data in localStorage
+  setDataLocalStorage(objectWithTheData);
+});
+textarea.addEventListener('input', function() {
+  const objectWithTheData = getData();
+  // here you save the data in localStorage
+  setDataLocalStorage(objectWithTheData);
+});
+showData();
+//Happy Coding!
