@@ -152,3 +152,5 @@ popupButtons.forEach((btn, index) => {
     PopUp(index);
   });
 });
+// Form Validation by JS
+const Form = document.getElementById('form');
