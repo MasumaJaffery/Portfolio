@@ -15,52 +15,52 @@ Navitems.forEach((Navitem) => {
     navigation.classList.remove('container');
   });
 });
-//JS Pop Functionality<---->(JS Objects)
+// JS Pop Functionality<---->(JS Objects)
 const Projects = [{
   img: 'Images/Snapshoot Portfolio-Desktop.png',
   title: 'Tonic',
-  skill: ['CANOPY','Back End Dev', '2023'],
+  skill: ['CANOPY', 'Back End Dev', '2023'],
   para: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   parapop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting remaining essent',
-  tech: ['HTML','CSS','JavaScript'],
+  tech: ['HTML', 'CSS', 'JavaScript'],
   source: 'https://github.com/MasumaJaffery/Portfolio',
-  livelink: 'https://masumajaffery.github.io/Portfolio/'
+  livelink: 'https://masumajaffery.github.io/Portfolio/',
 },
 {
   img: 'Images/Snapshoot Portfolio-Desktop-2.png',
   title: 'Multi-Post Stories',
-  skill: ['CANOPY','Back End Dev','2023'],
+  skill: ['CANOPY', 'Back End Dev', '2023'],
   para: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   parapop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting remaining essent',
-  tech: ['HTML','CSS','JavaScript'],
-  source:'https://github.com/MasumaJaffery/Portfolio',
-  livelink: 'https://masumajaffery.github.io/Portfolio/'
+  tech: ['HTML', 'CSS', 'JavaScript'],
+  source: 'https://github.com/MasumaJaffery/Portfolio',
+  livelink: 'https://masumajaffery.github.io/Portfolio/',
 },
 {
   img: 'Images/Snapshoot Portfolio-Desktop-3.png',
   title: 'Tonic',
-  skill: ['CANOPY','Back End Dev', '2023'],
+  skill: ['CANOPY', 'Back End Dev', '2023'],
   para: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   parapop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting remaining essent',
-  tech: ['HTML','CSS','JavaScript'],
+  tech: ['HTML', 'CSS', 'JavaScript'],
   source: 'https://github.com/MasumaJaffery/Portfolio',
-  livelink: 'https://masumajaffery.github.io/Portfolio/'
+  livelink: 'https://masumajaffery.github.io/Portfolio/',
 },
 {
   img: 'Images/Snapshoot Portfolio-Desktop-4.png',
   title: 'Multi-Post Stories',
-  skill: ['CANOPY','Back End Dev','2023'],
+  skill: ['CANOPY', 'Back End Dev', '2023'],
   para: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
   parapop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting remaining essent',
-  tech: ['HTML','CSS','JavaScript'],
-  source:'https://github.com/MasumaJaffery/Portfolio',
-  livelink: 'https://masumajaffery.github.io/Portfolio/'
+  tech: ['HTML', 'CSS', 'JavaScript'],
+  source: 'https://github.com/MasumaJaffery/Portfolio',
+  livelink: 'https://masumajaffery.github.io/Portfolio/',
 }];
 // Use this Objects in Function Below
 const ProjectsCard = document.getElementById('work');
 function show(index) {
-  ProjectsCard.innerHTML += 
-  `<div class="work-card"> 
+  ProjectsCard.innerHTML
+  += `<div class="work-card"> 
   <div class="work-img">
       <img class="img1" src="${Projects[index].img}">
   </div>
@@ -87,16 +87,16 @@ function show(index) {
   </div>
 </div>`;
 }
-//For Loop to Deal with Array of Objects;
-for(let i = 0; i < Projects.length; i += 1) {
+// For Loop to Deal with Array of Objects;
+for (let i = 0; i < Projects.length; i += 1) {
   show(i);
 }
-//Pop Up Configurations;
+// Pop Up Configurations;
 const PopUpWindow = document.getElementById('PopupDetials');
 
 function PopUp(index) {
-  const project = Projects[index]; 
-  PopUpWindow.innerHTML =  `
+  const project = Projects[index];
+  PopUpWindow.innerHTML = `
   <div class = "Modal-bg">
   <div class="Modal">
       <div class="Modal-Title">
@@ -135,7 +135,7 @@ function PopUp(index) {
       </div>
     </div>
     </div>
-    </div>` ;
+    </div>`;
   // Add event listener to close button
   const closeButton = PopUpWindow.querySelector('.close-btn');
   closeButton.addEventListener('click', () => {

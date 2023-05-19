@@ -175,6 +175,12 @@ header .desktop-nav {
   flex-grow: 0;
 }
 
+.modal-buttons a {
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 20px;
+}
+
 .content a {
   text-decoration: none;
   width: 100%;
@@ -200,6 +206,17 @@ header .desktop-nav {
 
 .icons ul li {
   transition: all 1s ease-out;
+}
+
+.align ul li {
+  width: fit-content;
+  height: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1rem;
+  color: #7a869a;
+  margin-left: 1.2rem;
 }
 
 .icons ul li:hover {
@@ -252,6 +269,10 @@ header .desktop-nav {
   transition: all 0.8s ease-in-out;
 }
 
+.Modal .img1 {
+  width: -webkit-fill-available;
+}
+
 .work-card .img1:hover {
   transform: scale(1.05);
 }
@@ -289,17 +310,6 @@ header .desktop-nav {
   line-height: 1rem;
   color: #344563;
   margin-left: 0.4rem;
-}
-
-.align ul li {
-  width: fit-content;
-  height: auto;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 1rem;
-  color: #7a869a;
-  margin-left: 1.2rem;
 }
 
 .work-card p {
@@ -458,7 +468,6 @@ header .desktop-nav {
   position: fixed;
   top: 0;
   z-index: 998;
-  width: -webkit-fill-available;
 }
 
 .Modal {
@@ -503,10 +512,6 @@ header .desktop-nav {
   width: -webkit-fill-available;
 }
 
-.Modal .img1 {
-  width: -webkit-fill-available;
-}
-
 .Modal p {
   width: 100%;
   font-style: normal;
@@ -524,27 +529,11 @@ header .desktop-nav {
 .modal-buttons {
   display: flex;
   gap: 1rem;
+  justify-content: center;
 }
 
-.modal-buttons .see-live:hover,
-.modal-buttons .see-source:hover {
-    background-color: #396df2;
-    color: #fff;
-}
-  
-.modal-buttons .see-live:active,
-.modal-buttons .see-source:active {
-    background-color: #1b50d4;
-    color: #fff;
-  }
-  
-  .modal-buttons .see-live:disabled,
-  .modal-buttons .see-source:disabled {
-    background-color: #fff;
-    color: gray;
-  }
-
-.modal-buttons .see-live, .see-source {
+.modal-buttons .see-live,
+.see-source {
   box-sizing: border-box;
   padding: 12px;
   gap: 10px;
@@ -561,13 +550,24 @@ header .desktop-nav {
   letter-spacing: 0.03em;
   color: #396df2;
   margin-top: 0.6rem;
-  font-weight: 500;
 }
 
-.modal-buttons a {
-  text-decoration: none;
-  font-weight: 500;
-  line-height: 20px;
+.modal-buttons .see-live:hover,
+.modal-buttons .see-source:hover {
+  background-color: #396df2;
+  color: #fff;
+}
+
+.modal-buttons .see-live:active,
+.modal-buttons .see-source:active {
+  background-color: #1b50d4;
+  color: #fff;
+}
+
+.modal-buttons .see-live:disabled,
+.modal-buttons .see-source:disabled {
+  background-color: #fff;
+  color: gray;
 }
 
 #About,
@@ -931,6 +931,11 @@ footer #contact-form .contact-details p {
     list-style: none;
   }
 
+  .align span,
+  .align li {
+    font-size: 15px;
+  }
+
   header .desktop-nav ul {
     display: flex;
     list-style: none;
@@ -995,7 +1000,7 @@ footer #contact-form .contact-details p {
     box-shadow: 5px 5px 10px 5px  rgb(217, 213, 213, 0.5);
     column-gap: 1rem;
   }
-  
+
   #work .work-card:nth-child(odd) {
     flex-direction: row;
   }
@@ -1006,6 +1011,7 @@ footer #contact-form .contact-details p {
 
   .work-card .work-detials {
     margin-bottom: 3.5rem !important;
+    width: 100%;
   }
 
   .work-card .img1 {
@@ -1015,13 +1021,8 @@ footer #contact-form .contact-details p {
     margin-top: -7.8rem;
   }
 
-
   .work-card .img1:hover {
     transform: scale(1.05);
-  }
-
-  .work-card .work-detials {
-    width: 100%;
   }
 
   .work-card .work-detials h2 {
@@ -1035,6 +1036,10 @@ footer #contact-form .contact-details p {
     flex: none;
     order: 0;
     flex-grow: 0;
+  }
+
+  .align ul li {
+    margin-left: 1.8rem;
   }
 
   .work-card .work-detials .align ul {
@@ -1064,6 +1069,15 @@ footer #contact-form .contact-details p {
     line-height: 24px;
     color: #6b778c;
     margin-left: 2rem;
+  }
+
+  .desktop-pop p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    width: -webkit-fill-available;
+    flex-wrap: wrap;
   }
 
   .work-card .work-detials p {
@@ -1213,37 +1227,19 @@ footer #contact-form .contact-details p {
     flex-direction: column;
     gap: 1rem;
   }
-  
+
   .Modal-Title {
     width: 100%;
   }
-  
+
   .Modal-Title .heading {
     font-size: 40px;
-  }
-
-  .align span,
-  .align li {
-    font-size: 15px;
-  }
-
-  .align ul li {
-  margin-left: 1.8rem;
   }
 
   .Modal .desktop-pop {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-  }
-
-  .desktop-pop p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    display: flex;
-    width: -webkit-fill-available;
-    flex-wrap: wrap;
   }
 
   .desktop-pop .deskpop {
@@ -1257,7 +1253,6 @@ footer #contact-form .contact-details p {
     padding-top: 0.5rem;
     margin-bottom: 1rem;
   }
-
 
   #About .Aboutcontent .resume {
     margin-top: 1rem;
