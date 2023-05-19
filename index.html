@@ -192,6 +192,7 @@
               love to help with it!
             </p>
           </div>
+          <!--Actual Form-->
           <div class="form">
             <form
               action="https://formspree.io/f/xzbqjwon"
@@ -201,6 +202,7 @@
               <input
                 type="text"
                 name="name"
+                id = name
                 placeholder="Your name here"
                 maxlength="30"
                 required
@@ -208,6 +210,7 @@
               <input
                 type="email"
                 name="email"
+                id = "email"
                 placeholder="Your email here"
                 required
               />
@@ -218,6 +221,9 @@
                 columns="50"
                 maxlength="500"
               ></textarea>
+              <!--Form Validation div-->
+          <div id = "error">
+          </div>
               <div class="someter">
                 <button type="submit">Get in touch</button>
               </div>

@@ -153,4 +153,12 @@ popupButtons.forEach((btn, index) => {
   });
 });
 // Form Validation by JS
-const Form = document.getElementById('form');
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const error = document.getElementById('error');
+form.addEventListener('submit', (e) => {
+   if(email.value.toLowerCase() !== email.value){
+    e.preventDefault();
+    error.innerHTML = 'Email must be in Lower Case, The form is not sent .';
+   }
+});
