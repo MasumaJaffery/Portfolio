@@ -93,7 +93,6 @@ for (let i = 0; i < Projects.length; i += 1) {
 }
 // Pop Up Configurations;
 const PopUpWindow = document.getElementById('PopupDetials');
-
 function PopUp(index) {
   const project = Projects[index];
   PopUpWindow.innerHTML = `
