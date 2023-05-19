@@ -93,7 +93,6 @@ for (let i = 0; i < Projects.length; i += 1) {
 }
 // Pop Up Configurations;
 const PopUpWindow = document.getElementById('PopupDetials');
-
 function PopUp(index) {
   const project = Projects[index];
   PopUpWindow.innerHTML = `
@@ -153,6 +152,15 @@ popupButtons.forEach((btn, index) => {
   });
 });
 // Form Validation by JS
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const error = document.getElementById('error');
+form.addEventListener('submit', (e) => {
+  if (email.value.toLowerCase() !== email.value) {
+    e.preventDefault();
+    error.innerHTML = 'Email must be in Lower Case, The form is not sent .';
+  }
+});
 //Form Data Preservation in Browser
 /*
 Short Summary:
@@ -219,3 +227,4 @@ textarea.addEventListener('input', function() {
 });
 showData();
 //Happy Coding!
+
