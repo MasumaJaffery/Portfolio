@@ -858,6 +858,15 @@ footer #contact-form .contact-details p {
   color: rgb(134, 134, 134);
 }
 
+#error {
+  color: red;
+  -webkit-text-stroke: 10px solid #fff;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
 @media only screen and (min-width: 768px) {
   header .mobile-nav {
     display: none;
