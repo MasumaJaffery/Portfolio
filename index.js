@@ -93,7 +93,6 @@ for (let i = 0; i < Projects.length; i += 1) {
 }
 // Pop Up Configurations;
 const PopUpWindow = document.getElementById('PopupDetials');
-
 function PopUp(index) {
   const project = Projects[index];
   PopUpWindow.innerHTML = `
@@ -162,6 +161,7 @@ form.addEventListener('submit', (e) => {
     error.innerHTML = 'Email must be in Lower Case, The form is not sent .';
   }
 });
+
 // Form Data Preservation in Browser
 const name1 = document.getElementById('name');
 const email1 = document.getElementById('email');
@@ -215,4 +215,3 @@ textarea.addEventListener('input', () => {
   setDataLocalStorage(objectWithTheData);
 });
 showData();
-// Happy Coding!
