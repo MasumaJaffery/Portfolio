@@ -80,7 +80,7 @@ After you're finished please remove all the comments and instructions!
 ### Key Features <a name="key-features"></a>
 
 - **[Repository Setup!]**
-- **[Add Html & CSS Files]**
+- **[Add Html & CSS, Javascript Files]**
 - **[Linters Configurations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
