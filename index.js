@@ -161,3 +161,57 @@ form.addEventListener('submit', (e) => {
     error.innerHTML = 'Email must be in Lower Case, The form is not sent .';
   }
 });
+
+// Form Data Preservation in Browser
+const name1 = document.getElementById('name');
+const email1 = document.getElementById('email');
+const textarea = document.getElementById('textarea');
+function getData() {
+  const Object = {
+    name: name1.value,
+    email: email1.value,
+    textarea: textarea.value,
+  };
+  return Object;
+}
+function setDataLocalStorage(Object) {
+  const convertObject = JSON.stringify(Object);
+  window.localStorage.setItem('data-form', convertObject);
+  // setItem(key,value)
+}
+
+function getDataFromLocalStorage() {
+  // first we check if the object 'data-form' exists in localstorage
+  const dataForm = window.localStorage.getItem('data-form');
+  if (dataForm) {
+    return JSON.parse(dataForm); // we use JSON.parse to convert the string into Object again
+  }
+  return dataForm;
+}
+
+// here you get the data from localStorage when the page Load
+function showData() {
+  const dataFromLocalStorage = getDataFromLocalStorage();
+  if (dataFromLocalStorage) {
+    name1.value = dataFromLocalStorage.name;
+    email1.value = dataFromLocalStorage.email;
+    textarea.value = dataFromLocalStorage.textarea;
+  }
+}
+// here you get your data from the Contact Form
+name1.addEventListener('input', () => {
+  const objectWithTheData = getData();
+  // here you save the data in localStorage
+  setDataLocalStorage(objectWithTheData);
+});
+email1.addEventListener('input', () => {
+  const objectWithTheData = getData();
+  // here you save the data in localStorage
+  setDataLocalStorage(objectWithTheData);
+});
+textarea.addEventListener('input', () => {
+  const objectWithTheData = getData();
+  // here you save the data in localStorage
+  setDataLocalStorage(objectWithTheData);
+});
+showData();
