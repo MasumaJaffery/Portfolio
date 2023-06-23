@@ -248,7 +248,6 @@ header .desktop-nav {
   padding: 1rem;
   grid-gap: 10px;
   width: 100%;
-  height: 552px;
   background: #fff;
   border: 1px solid #def1e6;
   box-shadow: 5px 5px 10px 5px  rgb(217, 213, 213, 0.5);
@@ -1035,7 +1034,6 @@ footer #contact-form .contact-details p {
   }
 
   .work-card .work-detials h2 {
-    height: 46px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -1069,8 +1067,6 @@ footer #contact-form .contact-details p {
   }
 
   .work-card .work-detials .align ul li {
-    width: 120px;
-    height: 24px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -1091,7 +1087,6 @@ footer #contact-form .contact-details p {
 
   .work-card .work-detials p {
     width: 90%;
-    height: 50px;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Poppins', sans-serif;
@@ -1112,7 +1107,6 @@ footer #contact-form .contact-details p {
     align-items: center;
     font-family: 'Poppins', sans-serif;
     gap: 1rem;
-    padding-top: 1rem;
   }
 
   .work-card .work-detials .tags .hash .HTML {
@@ -1259,7 +1253,6 @@ footer #contact-form .contact-details p {
   }
 
   .tags {
-    padding-top: 0.5rem;
     margin-bottom: 1rem;
   }
 

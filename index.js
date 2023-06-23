@@ -17,14 +17,14 @@ Navitems.forEach((Navitem) => {
 });
 // JS Pop Functionality<---->(JS Objects)
 const Projects = [{
-  img: 'Images/Snapshoot Portfolio-Desktop.png',
-  title: 'Tonic',
-  skill: ['CANOPY', 'Back End Dev', '2023'],
-  para: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  parapop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting remaining essent',
+  img: 'Images/Zufta Tours & Travels.png',
+  title: 'Zufta Tours & Travels',
+  skill: ['Travel', 'Full-Stack Dev', '2023'],
+  para: 'Zufta Travel and Tours is the Largest and most reliable tourism company in Pakistan with lots of satisfied clients and we have arranged almost over 500 tours successfully..',
+  parapop: 'Zufta Travel and Tours is the Largest and most reliable tourism company in Pakistan with lots of satisfied clients and we have arranged almost over 500 tours successfully. We offer tour to Hunza Valley, Naltar Valley Swat, Naran  Kaghan, Khunjrab Pass, Fairy Meadows, and many more incredible places around Pakistan. We arrange Family tours, Co-oporate tours, Group tours and Honeymoon tours for our valuable clients. With large numbers of fans, we became the largest tourism company in Pakistan. We also arrange tours for foreigners who came to Pakistan and Explore nature’s beauty at it’s best. So, pack your bags and visit your dream places in Pakistan.',
   tech: ['HTML', 'CSS', 'JavaScript'],
-  source: 'https://github.com/MasumaJaffery/Portfolio',
-  livelink: 'https://masumajaffery.github.io/Portfolio/',
+  source: 'https://github.com/MasumaJaffery/Module-Capstone--1',
+  livelink: 'https://masumajaffery.github.io/Module-Capstone--1/',
 },
 {
   img: 'Images/Snapshoot Portfolio-Desktop-2.png',
@@ -73,7 +73,7 @@ function show(index) {
               <li>${Projects[index].skill[2]}</li>
           </ul>
       </div>
-      <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+      <p>${Projects[index].para}</p>
       <div class="tags">
           <ul class="hash">
               <li class="HTML">${Projects[index].tech[0]}</li>
@@ -151,6 +151,7 @@ popupButtons.forEach((btn, index) => {
     PopUp(index);
   });
 });
+
 // Form Validation by JS
 const form = document.getElementById('form');
 const email = document.getElementById('email');
@@ -166,52 +167,23 @@ form.addEventListener('submit', (e) => {
 const name1 = document.getElementById('name');
 const email1 = document.getElementById('email');
 const textarea = document.getElementById('textarea');
-function getData() {
-  const Object = {
-    name: name1.value,
-    email: email1.value,
-    textarea: textarea.value,
+function setData() {
+  const userData = {
+    Name: name1.value,
+    Email: email1.value,
+    TextArea: textarea.value,
   };
-  return Object;
-}
-function setDataLocalStorage(Object) {
-  const convertObject = JSON.stringify(Object);
-  window.localStorage.setItem('data-form', convertObject);
-  // setItem(key,value)
+
+  localStorage.setItem('userData', JSON.stringify(userData));
 }
 
-function getDataFromLocalStorage() {
-  // first we check if the object 'data-form' exists in localstorage
-  const dataForm = window.localStorage.getItem('data-form');
-  if (dataForm) {
-    return JSON.parse(dataForm); // we use JSON.parse to convert the string into Object again
-  }
-  return dataForm;
+form.addEventListener('input', setData);
+
+function getData() {
+  const getInfo = JSON.parse(localStorage.getItem('userData'));
+  name1.value = getInfo.Name;
+  email1.value = getInfo.Email;
+  textarea.value = getInfo.TextArea;
 }
 
-// here you get the data from localStorage when the page Load
-function showData() {
-  const dataFromLocalStorage = getDataFromLocalStorage();
-  if (dataFromLocalStorage) {
-    name1.value = dataFromLocalStorage.name;
-    email1.value = dataFromLocalStorage.email;
-    textarea.value = dataFromLocalStorage.textarea;
-  }
-}
-// here you get your data from the Contact Form
-name1.addEventListener('input', () => {
-  const objectWithTheData = getData();
-  // here you save the data in localStorage
-  setDataLocalStorage(objectWithTheData);
-});
-email1.addEventListener('input', () => {
-  const objectWithTheData = getData();
-  // here you save the data in localStorage
-  setDataLocalStorage(objectWithTheData);
-});
-textarea.addEventListener('input', () => {
-  const objectWithTheData = getData();
-  // here you save the data in localStorage
-  setDataLocalStorage(objectWithTheData);
-});
-showData();
+getData();
