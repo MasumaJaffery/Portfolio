@@ -28,7 +28,7 @@ const Projects = [{
 },
 {
   img: 'Images/Today Weather.png',
-  title: 'Multi-Post Stories',
+  title: 'Today Weather',
   skill: ['Weather', 'Front End Dev', '2023'],
   para: 'The Weather App is based on Iraq Weather Forecast. Fetching Data from open source weather Api and renders on web app.',
   parapop: 'The Weather App is based on Iraq Weather Forecast. Fetching Data from open source weather Api and renders on web app.',
