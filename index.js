@@ -37,25 +37,16 @@ const Projects = [{
   livelink: 'https://masumajaffery.github.io/weather-app/',
 },
 {
-  img: 'Images/Snapshoot Portfolio-Desktop-3.png',
-  title: 'Tonic',
+  img: 'Images/budgetapp.png',
+  title: 'Budgetary',
   skill: ['CANOPY', 'Back End Dev', '2023'],
-  para: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  parapop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting remaining essent',
-  tech: ['HTML', 'CSS', 'JavaScript'],
-  source: 'https://github.com/MasumaJaffery/Portfolio',
-  livelink: 'https://masumajaffery.github.io/Portfolio/',
-},
-{
-  img: 'Images/Snapshoot Portfolio-Desktop-4.png',
-  title: 'Multi-Post Stories',
-  skill: ['CANOPY', 'Back End Dev', '2023'],
-  para: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  parapop: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries but also the leap into electronic typesetting remaining essent',
-  tech: ['HTML', 'CSS', 'JavaScript'],
-  source: 'https://github.com/MasumaJaffery/Portfolio',
-  livelink: 'https://masumajaffery.github.io/Portfolio/',
-}];
+  para: 'A budgeting application developed using Ruby on Rails (RoR) often embodies a user-friendly interface coupled with robust functionalities for efficient financial management.',
+  parapop: 'A budgeting application developed using Ruby on Rails (RoR) often embodies a user-friendly interface coupled with robust functionalities for efficient financial management.',
+  tech: ['ROR', 'CSS', 'Ruby'],
+  source: 'https://github.com/MasumaJaffery/Budget_App',
+  livelink: 'https://budgetary-1.onrender.com/',
+};
+
 // Use this Objects in Function Below
 const ProjectsCard = document.getElementById('work');
 function show(index) {
