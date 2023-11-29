@@ -45,7 +45,8 @@ const Projects = [{
   tech: ['ROR', 'CSS', 'Ruby'],
   source: 'https://github.com/MasumaJaffery/Budget_App',
   livelink: 'https://budgetary-1.onrender.com/',
-};
+}
+];
 
 // Use this Objects in Function Below
 const ProjectsCard = document.getElementById('work');
