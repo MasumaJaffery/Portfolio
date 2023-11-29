@@ -180,6 +180,9 @@ function getData() {
 
 getData();
 
-document.getElementById("resumeBtn").addEventListener("click", function() {
-  window.location.href = "https://docs.google.com/document/d/1WLvNzezDX5oJRl8l1gqf_gZzK31S3z4WEVk-fUEin9s/edit?usp=sharing";
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById("resumeBtn").addEventListener("click", function() {
+    window.location.href = "https://docs.google.com/document/d/1WLvNzezDX5oJRl8l1gqf_gZzK31S3z4WEVk-fUEin9s/edit?usp=sharing";
+  });
 });
+
