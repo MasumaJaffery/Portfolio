@@ -17,7 +17,7 @@ Navitems.forEach((Navitem) => {
 });
 // JS Pop Functionality<---->(JS Objects)
 const Projects = [{
-  img: 'Images/Zufta Tours & Travels.png',
+  img: 'Images/1.png',
   title: 'Zufta Tours & Travels',
   skill: ['Travel', 'Full-Stack Dev', '2023'],
   para: 'Zufta Travel and Tours is the Largest and most reliable tourism company in Pakistan with lots of satisfied clients and we have arranged almost over 500 tours successfully..',
@@ -27,7 +27,7 @@ const Projects = [{
   livelink: 'https://masumajaffery.github.io/Module-Capstone--1/',
 },
 {
-  img: 'Images/Today Weather.png',
+  img: 'Images/2.png',
   title: 'Todays Weather',
   skill: ['Weather', 'Front End Dev', '2023'],
   para: 'The Weather App is based on Iraq Weather Forecast. Fetching Data from open source weather Api and renders on web app.',
@@ -37,7 +37,7 @@ const Projects = [{
   livelink: 'https://masumajaffery.github.io/weather-app/',
 },
 {
-  img: 'Images/budgetapp.png',
+  img: 'Images/3.png',
   title: 'Budgetary',
   skill: ['CANOPY', 'Back End Dev', '2023'],
   para: 'A budgeting application developed using Ruby on Rails (RoR) often embodies a user-friendly interface coupled with robust functionalities for efficient financial management.',
@@ -45,6 +45,26 @@ const Projects = [{
   tech: ['ROR', 'CSS', 'Ruby'],
   source: 'https://github.com/MasumaJaffery/Budget_App',
   livelink: 'https://budgetary-1.onrender.com/',
+},
+{
+  img: 'Images/4.png',
+  title: 'Code Courses',
+  skill: ['Level Up', 'Front End Dev', '2022'],
+  para: 'Embark on a coding journey with our code courses! Learn the fundamentals of web development as you craft stunning, responsive websites using these foundational languages. Dive into hands-on projects and master the art of designing captivating web experiences',
+  parapop: 'Embark on a coding journey with our code courses! Learn the fundamentals of web development as you craft stunning, responsive websites using these foundational languages. Dive into hands-on projects and master the art of designing captivating web experiences',
+  tech: ['HTML5', 'CSS3', 'JavaScript'],
+  source: 'https://github.com/MasumaJaffery/StaticSite',
+  livelink: 'https://masumajaffery.github.io/StaticSite/',
+},
+{
+  img: 'Images/5.png',
+  title: 'Space Travelers Hub',
+  skill: ['Microverse', 'Front End Dev', '2023'],
+  para: 'Space Travelers Hub displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.',
+  parapop: 'Space Travelers Hub displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.',
+  tech: ['React', 'Redux', 'Bootstrap'],
+  source: 'https://github.com/MasumaJaffery/space-travelers-hub',
+  livelink: 'https://endearing-flan-d8189e.netlify.app/',
 }
 ];
 
@@ -185,4 +205,5 @@ document.addEventListener('DOMContentLoaded', function() {
     window.location.href = "https://docs.google.com/document/d/1WLvNzezDX5oJRl8l1gqf_gZzK31S3z4WEVk-fUEin9s/edit?usp=sharing";
   });
 });
+
 
