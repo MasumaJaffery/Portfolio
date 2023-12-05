@@ -1299,7 +1299,7 @@ footer #contact-form .contact-details p {
   #About {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 6rem;
+    margin-top: 5rem;
     background-image: url("Images/self-desktop1.png");
     background-size: cover;
     width: 100%;
