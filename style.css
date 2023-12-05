@@ -581,11 +581,11 @@ header .desktop-nav {
 }
 
 #About {
-  margin-top: 60%;
+  margin-top: 75%;
   background-image: url("Images/self.png");
   background-size: cover;
   width: 100%;
-  height: 1280px;
+  height: fit-content;
 }
 
 #About .Aboutcontent {
@@ -746,8 +746,14 @@ header .desktop-nav {
   margin-top: 0.4rem;
   margin-right: 2.5rem;
   position: relative;
+}
+
+#About .other #toggle_down {
+  margin-top: 0.4rem;
+  margin-right: 2.3rem;
+  position: relative;
   left: 87%;
-  bottom: 37px;
+  bottom: 40px;
 }
 
 footer #contact-form {
@@ -1539,3 +1545,4 @@ footer #contact-form .contact-details p {
     padding: 0.5rem;
   }
 }
+
