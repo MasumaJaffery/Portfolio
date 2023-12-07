@@ -15,6 +15,38 @@ Navitems.forEach((Navitem) => {
     navigation.classList.remove('container');
   });
 });
+
+const toggleLanguages = document.querySelector('#toggle_languages');
+const showLanguages = document.querySelector('#show_languages');
+const toggleLanguagesImg = document.querySelector('#toggle_languages');
+toggleLanguages.addEventListener('click', () => {
+  showLanguages.classList.toggle('visible');
+  toggleLanguagesImg.classList.toggle('arrow-down');
+});
+
+const toggleTools = document.querySelector('#toggle_tools');
+const showTools = document.querySelector('#show_tools');
+const toggleToolsImg = document.querySelector('#toggle_tools');
+toggleTools.addEventListener('click', () => {
+  showTools.classList.toggle('visible');
+  toggleToolsImg.classList.toggle('arrow-down');
+});
+
+const toggleSkills = document.querySelector('#toggle_skills');
+const showSkills = document.querySelector('#show_skills');
+const toggleSkillsImg = document.querySelector('#toggle_skills');
+toggleSkills.addEventListener('click', () => {
+  showSkills.classList.toggle('visible');
+  toggleSkillsImg.classList.toggle('arrow-down');
+});
+
+
+//const toggleButton = document.querySelector('#toggle_down');
+// const targetElement = document.querySelector('#show');
+// toggleButton.addEventListener('click', () => {
+//targetElement.classList.toggle('visible');
+//});
+
 // JS Pop Functionality<---->(JS Objects)
 const Projects = [{
   img: 'Images/1.png',
@@ -205,5 +237,3 @@ document.addEventListener('DOMContentLoaded', function() {
     window.location.href = "https://docs.google.com/document/d/1WLvNzezDX5oJRl8l1gqf_gZzK31S3z4WEVk-fUEin9s/edit?usp=sharing";
   });
 });
-
-

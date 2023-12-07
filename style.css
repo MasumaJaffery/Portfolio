@@ -877,6 +877,24 @@ footer #contact-form .contact-details p {
   padding-top: 1rem;
 }
 
+hr {
+  margin: 1rem;
+}
+
+.arrow-left {
+  position: relative;
+  left: 88%;
+  bottom: 39px;
+}
+
+.arrow-down {
+  transform: rotate(90deg);
+}
+
+#About .languages .visible{
+  display: none;
+} 
+
 @media only screen and (min-width: 768px) {
   header .mobile-nav {
     display: none;
@@ -1540,7 +1558,7 @@ footer #contact-form .contact-details p {
     padding-left: 8px;
   }
 
-  #About .languages .background .hidden {    
+  #About .languages .background .f {    
     position: static;
     padding: 0.5rem;
   }
