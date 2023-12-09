@@ -721,9 +721,9 @@ header .desktop-nav {
 
 #About .background a {
   position: relative;
-  left: 6px;
+  left: 2%;
   text-decoration: none;
-  bottom: 12px;
+  bottom: 34%;
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
@@ -743,9 +743,11 @@ header .desktop-nav {
 }
 
 #About .other img {
-  margin-top: 0.4rem;
-  margin-right: 2.5rem;
   position: relative;
+}
+
+#About .other .f {
+  padding: 0.60rem;
 }
 
 #About .other #toggle_down {
