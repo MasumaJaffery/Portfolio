@@ -76,7 +76,7 @@ const Projects = [{
   parapop: 'A budgeting application developed using Ruby on Rails (RoR) often embodies a user-friendly interface coupled with robust functionalities for efficient financial management.',
   tech: ['ROR', 'CSS', 'Ruby'],
   source: 'https://github.com/MasumaJaffery/Budget_App',
-  livelink: 'https://budgetary-1.onrender.com/',
+  livelink: 'https://budgetary1.onrender.com/',
 },
 {
   img: 'Images/4.png',
