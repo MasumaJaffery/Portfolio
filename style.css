@@ -1014,10 +1014,8 @@ hr {
   .shapes {
     background-size: inherit;
     background-image: url(Images/shapes.png);
-    top: 62px;
-    left: 10px;
-    position: absolute;
-    height: 100vh;
+    margin: auto;
+    height: 90vh;
   }
 
   .content {
