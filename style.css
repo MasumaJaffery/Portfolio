@@ -906,7 +906,7 @@ hr {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 72px;
   }
