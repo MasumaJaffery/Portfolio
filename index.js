@@ -96,7 +96,7 @@ const Projects = [{
   parapop: 'Space Travelers Hub displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.This is a React and Redux website that displays a list of Rockets and Space Missions and allows you to book rockets and join selected space missions.',
   tech: ['React', 'Redux', 'Bootstrap'],
   source: 'https://github.com/MasumaJaffery/space-travelers-hub',
-  livelink: 'https://endearing-flan-d8189e.netlify.app/',
+  livelink: 'https://frolicking-cobbler-f01e96.netlify.app/',
 }
 ];
 
