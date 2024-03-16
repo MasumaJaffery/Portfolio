@@ -306,7 +306,7 @@ header .desktop-nav {
 }
 
 .align span {
-  width: 55px;
+  width: fit-content;
   height: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -1561,6 +1561,13 @@ hr {
   #About .languages .background .f {    
     position: static;
     padding: 0.5rem;
+  }
+
+  .Modal .work-img {
+    display: contents;
+  }
+  .Modal .img1 {
+    width: 50%;
   }
 }
 
