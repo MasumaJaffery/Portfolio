@@ -56,7 +56,7 @@ const Projects = [{
   parapop: 'Zufta Travel and Tours is the Largest and most reliable tourism company in Pakistan with lots of satisfied clients and we have arranged almost over 500 tours successfully. We offer tour to Hunza Valley, Naltar Valley Swat, Naran  Kaghan, Khunjrab Pass, Fairy Meadows, and many more incredible places around Pakistan. We arrange Family tours, Co-oporate tours, Group tours and Honeymoon tours for our valuable clients. With large numbers of fans, we became the largest tourism company in Pakistan. We also arrange tours for foreigners who came to Pakistan and Explore nature’s beauty at it’s best. So, pack your bags and visit your dream places in Pakistan.',
   tech: ['HTML', 'CSS', 'JavaScript'],
   source: 'https://github.com/MasumaJaffery/Module-Capstone--1',
-  livelink: 'https://masumajaffery.github.io/Module-Capstone--1/',
+  livelink: 'https://masumajaffery.github.io/Zufta-Tours-Travels/',
 },
 {
   img: 'Images/2.png',
