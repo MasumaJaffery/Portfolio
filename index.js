@@ -64,7 +64,7 @@ const Projects = [{
   skill: ['Weather', 'Front End Dev', '2023'],
   para: 'The Weather App is based on Iraq Weather Forecast. Fetching Data from open source weather Api and renders on web app.',
   parapop: 'The Weather App is based on Iraq Weather Forecast. Fetching Data from open source weather Api and renders on web app.',
-  tech: ['HTML', 'CSS', 'JavaScript','React','Redux','API'],
+  tech: ['React','Redux','API'],
   source: 'https://github.com/MasumaJaffery/weather-app',
   livelink: 'https://masumajaffery.github.io/weather-app/',
 },
@@ -97,6 +97,16 @@ const Projects = [{
   tech: ['React', 'Redux', 'Bootstrap'],
   source: 'https://github.com/MasumaJaffery/space-travelers-hub',
   livelink: 'https://frolicking-cobbler-f01e96.netlify.app/',
+},
+{
+  img: 'Images/6.png',
+  title: 'Brunswick Builders',
+  skill: ['React', 'Front End Dev', '2024'],
+  para: 'Brunswick Builders, LLC is a construction management and project development firm whose owners and members have an over 60 years of combined experience committed to superior quality services to its clients',
+  parapop: 'Brunswick Builders, LLC is a construction management and project development firm whose owners and members have an over 60 years of combined experience committed to superior quality services to its clients',
+  tech: ['React', 'Redux', 'TailwindCSS'],
+  source: 'https://github.com/MasumaJaffery/',
+  livelink: 'https://www.brunswickbuildersllc.com/',
 }
 ];
 
