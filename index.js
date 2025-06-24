@@ -48,7 +48,28 @@ toggleSkills.addEventListener('click', () => {
 //});
 
 // JS Pop Functionality<---->(JS Objects)
-const Projects = [{
+const Projects = [
+  {
+  img: 'Images/Globe Weather.png',
+  title: 'Globe Weather',
+  skill: ['Weather', 'SheCodes', '2025'],
+  para: 'Globe Weather is a weather application that provides real-time weather information and forecasts for locations around the world.',
+  parapop: 'Globe Weather is a weather application that provides real-time weather information and forecasts for locations around the world. It allows users to search for specific cities, view current conditions, and access detailed forecasts, making it a valuable tool for planning daily activities based on weather conditions.',
+  tech: ['CSS', 'JavaScript', 'API'],
+  source: 'https://github.com/MasumaJaffery/Globe-Weather-App',
+  livelink: 'https://globeweather14.netlify.app/',
+},
+  {
+  img: 'Images/Book.png',
+  title: 'Nehjal Balagha',
+  skill: ['3D', 'Front End Dev', '2025'],
+  para: '3D Interactive Nehjul Balagha is a web application that allows users to explore the book in a 3D interactive format, enhancing the reading experience with immersive visuals and interactive features.',
+  parapop: '3D Interactive Nehjul Balagha is a web application that allows users to explore the book in a 3D interactive format, enhancing the reading experience with immersive visuals and interactive features. Users can navigate through the book, view its content according to their mood, and interact with various elements to gain a deeper understanding of the text.',
+  tech: ['Three.js', 'Typescript', 'TailwindCSS'],
+  source: 'https://nahjalbalagha110.vercel.app/',
+  livelink: 'https://nahjalbalagha110.vercel.app/',
+},
+ {
   img: 'Images/1.png',
   title: 'Zufta Tours & Travels',
   skill: ['Travel', 'Full-Stack Dev', '2023'],
@@ -57,16 +78,6 @@ const Projects = [{
   tech: ['HTML', 'CSS', 'JavaScript'],
   source: 'https://github.com/MasumaJaffery/Module-Capstone--1',
   livelink: 'https://masumajaffery.github.io/Zufta-Tours-Travels/',
-},
-{
-  img: 'Images/2.png',
-  title: 'Todays Weather',
-  skill: ['Weather', 'Front End Dev', '2023'],
-  para: 'The Weather App is based on Iraq Weather Forecast. Fetching Data from open source weather Api and renders on web app.',
-  parapop: 'The Weather App is based on Iraq Weather Forecast. Fetching Data from open source weather Api and renders on web app.',
-  tech: ['React','Redux','API'],
-  source: 'https://github.com/MasumaJaffery/weather-app',
-  livelink: 'https://masumajaffery.github.io/weather-app/',
 },
 {
 img: 'Images/3a.png',
